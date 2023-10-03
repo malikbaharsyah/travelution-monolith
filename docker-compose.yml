@@ -2,5 +2,18 @@ version: '3.3'
 services:
   web:
     image: tubes-1:latest
+    build: .
+    volumes:
+      - .:/var/www/html
     ports:
-      - 8008:80
+      - 80:80
+  database:
+    image: mysql
+    volumes:
+      - ./database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: travelution_database
+    ports:
+      - 3306:3306
+  
