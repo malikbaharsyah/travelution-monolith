@@ -1,0 +1,247 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    background-color: rgb(249, 218, 255)
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar ul {
+    width: auto;
+    list-style-type: none;
+    margin-left: -8px;
+    margin-top: -8px;
+    overflow: hidden;
+    background-color: rgb(99, 0, 108);
+  }
+
+.navbar ul li ul.profiledropdown li{
+    display: block;
+}
+
+.navbar ul li ul.profiledropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar ul li ul.profiledropdownadmin li{
+  display: block;
+}
+
+.navbar ul li ul.profiledropdownadmin{
+  width: 220px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.navbar ul li ul.menudropdown li{
+    display: block;
+}
+
+.navbar ul li ul.menudropdown{
+    float: left;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+  
+.navbar li {
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 26px;
+    text-decoration: none;
+}
+
+.navbar li img {
+    width: 95px;
+    height: 40px;
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+}
+  
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.navbar li:hover ul.profiledropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+}
+
+.navbar li:hover ul.profiledropdownadmin{
+  display: block;
+  margin-top: -1px;
+  margin-left: -161px;
+}
+
+.navbar li:hover ul.menudropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+}
+
+.maintitle {
+    width: auto;
+    height: 668px;
+    background-image: linear-gradient(rgba(17, 173, 175, 0.5), rgba(0, 0, 0, 0.5)), url(../package/purpletravel.jpg);    background-size: cover;
+    position: relative;
+    margin-left: -8px;
+    margin-top: -81px;
+    border-bottom: 5px solid rgb(199, 160, 255);
+  }
+
+.maintitle h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.maintitle h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 190px;
+}
+
+#information h1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#information p{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+#information ol{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.infosekilas{
+  background-color: white;
+  float: left;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 570px;
+  margin-bottom: 80px;
+  text-align: justify;
+  border: 2px solid rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px 35px 15px 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.infosekilas h1{
+  margin-bottom: 30px;
+}
+
+.infofitur{
+  background-color: white;
+  float: right;
+  margin-top: -307px;
+  margin-right: 70px;
+  text-align: justify;
+  border: 2px solid rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px 35px 25px 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.infovideo {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 35px;
+}
+
+.infovideo h1 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.contact{
+  width: auto;
+  height: 320px;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  background-color: rgb(255, 255, 255);
+  border-top: 5px solid rgb(0, 0, 0);
+}
+
+.contact h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact p{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -5px;
+  margin-left: 35px;
+}
+
+.contact img{
+  width: 40px;
+  height: 40px;
+  margin-left: 35px;
+  margin-bottom: 0px;
+  justify-content: right;
+}
+
+.logoakhir img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 35px;
+  margin-top: -185px;
+  align-items: right;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 6px; 
+}
+
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: gray; 
+  border-radius: 6px;
+}
