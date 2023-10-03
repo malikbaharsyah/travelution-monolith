@@ -15,9 +15,9 @@
             <li><a href="#">Jason</a>
                 <ul class="profiledropdownadmin">
                     <li><a href="profileinformation.php">Profil</a></li>
-                    <li><a href="selecteditdestination.php">Edit Destination</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
                     <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
-                    <li><a href="landingpage.php">Logout</a></li>
+                    <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
                 </ul>
             </li>

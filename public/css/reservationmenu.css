@@ -1,0 +1,214 @@
+body{
+    background-image: url(../package/purplebg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: relative;
+    z-index: 100000;
+  }
+  
+  .navbar ul {
+    width: auto;
+    list-style-type: none;
+    margin-left: -8px;
+    margin-top: -8px;
+    overflow: hidden;
+    background-color: rgb(99, 0, 108);
+  }
+  
+  .navbar ul li ul.profiledropdown li{
+    display: block;
+  }
+  
+  .navbar ul li ul.profiledropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  
+  .navbar ul li ul.profiledropdownadmin li{
+  display: block;
+  }
+  
+  .navbar ul li ul.profiledropdownadmin{
+  width: 220px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  }
+  
+  .navbar ul li ul.menudropdown li{
+    display: block;
+  }
+  
+  .navbar ul li ul.menudropdown{
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  
+  .navbar li {
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 26px;
+    text-decoration: none;
+  }
+  
+  .navbar li img {
+    width: 95px;
+    height: 40px;
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .navbar li a:hover {
+    background-color: #111;
+  }
+  
+  .navbar li:hover ul.menudropdown{
+    display: block;
+  }
+  
+  .navbar li:hover ul.profiledropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+  }
+  
+  .navbar li:hover ul.profiledropdownadmin{
+  display: block;
+  margin-top: -1px;
+  margin-left: -161px;
+  }
+  
+  .navbar li:hover ul.menudropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+  }
+
+.reservasimenu {
+    width: 30%;
+    height: 72%;
+    background-color: rgb(227, 178, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+}
+
+.reservasimenu h1{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.reservasimenuinfo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.reservasimenuinfo label{
+    margin-right: 20px;
+}
+
+.datekunjungan{
+    margin-bottom: 25px;
+}
+
+.datekunjungan #datekunjungan{
+    margin-left: 5px;
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.jumlahpengunjung{
+    margin-bottom: 25px;
+}
+
+.jumlahpengunjung #jumlahpengunjung{
+    margin-left: -3px;
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.waktumasuk{
+    margin-bottom: 25px;
+}
+
+.waktumasuk #waktumasuk{
+    margin-left: 65px;
+    width: 88px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.waktukeluar{
+    margin-bottom: 25px;
+}
+
+.waktukeluar #waktukeluar{
+    margin-left: 65px;
+    width: 88px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.reservasimenu #submit{
+    width: 120px;
+    padding: 12px 18px 12px 18px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+    background-color: rgb(138, 0, 219);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 81%;
+    left: 91%;
+    transform: translate(-205%, 0%);
+}
+
+.reservasimenu #submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.reservasimenu #submit:hover{
+    background-color: rgb(99, 0, 108);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}

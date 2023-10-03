@@ -15,15 +15,15 @@
             <li><a id="namapengguna" href="#">Jason</a>
                 <ul class="profiledropdownadmin">
                     <li><a href="profileinformation.php">Profil</a></li>
-                    <li><a href="selecteditdestination.php">Edit Destination</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
                     <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
-                    <li><a id="logout" href="landingpage.php">Logout</a></li>
+                    <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
                 </ul>
             </li>
             <li><a href="#information">About</a></li>
             <li><a href="#">Menu</a>
-                <ul class="menudropdown">\
+                <ul class="menudropdown">
                     <li><a href="listtempatwisata(login).php">Tempat Wisata</a></li>
                     <!-- <li><a href="#">Akomodasi</a></li> -->
                 </ul>
