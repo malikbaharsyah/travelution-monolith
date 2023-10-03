@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../package/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../../public/css/signup.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Travelution</title>
 </head>
@@ -32,8 +32,8 @@
             <h2>Phone Number:</h2>
             <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
         </div>
-        <button type="submit" name="submit" id="submit"><a href="../html/login.html">Sign Up</a></button>
+        <button type="submit" name="submit" id="submit">Sign Up</button>
     </div>
-    <!-- <script src="../js/signup.js"></script> -->
+    <script src="../../public/js/signup.js"></script>
 </body>
 </html>

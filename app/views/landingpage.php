@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../package/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/landingpage.css">
+    <link rel="stylesheet" href="../../public/css/landingpage.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Travelution</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="signup.php">Sign Up</a></li>
             <li><a href="#information">About</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="listtempatwisata.html">Tempat Wisata</a></li>
+                    <li><a href="listtempatwisata.php">Tempat Wisata</a></li>
                     <!-- <li><a href="#">Akomodasi</a></li> -->
                 </ul>
             </li>
             <li><a href="#maintitle">Home</a></li>
-            <li><img src="../package/logo2.png" alt="Travelution Logo"></li>
+            <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
     <div class="maintitle">
@@ -55,15 +55,15 @@
     </div>
     <div class="contact">
         <h1>Contact Us</h1>
-            <a href="https://www.instagram.com/travelution.id/"><img src="../package/insta.png" alt="instagram"></a>
-            <a href="https://twitter.com/travelution?lang=en"><img src="../package/x.png" alt="twitter"></a>
-            <a href="https://www.tiktok.com/@travelution_"><img src="../package/tiktok.png" alt="tiktok"></a>
-            <a href="https://www.youtube.com/channel/UCjJHr_zIN4qT5EqAyjy9tsg?app=desktop"><img src="../package/youtube.png" alt="youtube"></a>
+            <a href="https://www.instagram.com/travelution.id/"><img src="../../public/package/insta.png" alt="instagram"></a>
+            <a href="https://twitter.com/travelution?lang=en"><img src="../../public/package/x.png" alt="twitter"></a>
+            <a href="https://www.tiktok.com/@travelution_"><img src="../../public/package/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.youtube.com/channel/UCjJHr_zIN4qT5EqAyjy9tsg?app=desktop"><img src="../../public/package/youtube.png" alt="youtube"></a>
             <p>Jalan Kenanga 5 No 10, Bekasi Utara, Bekasi</p>
             <p>0815-2389-3589</p>
             <p>travelution@gmail.com</p>
         <div class="logoakhir">
-            <img src="../package/logo.png" alt="Travelution Logo">
+            <img src="../../public/package/logo.png" alt="Travelution Logo">
         </div>
     </div>
 </body>
