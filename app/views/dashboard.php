@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../../public/css/landingpage.css">
+    <link rel="stylesheet" href="../../public/css/dashboard.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Travelution</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
+            <li><a id="namapengguna" href="#">Jason</a>
+                <ul class="profiledropdownadmin">
+                    <li><a href="profileinformation.php">Profil</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
+                    <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
+                    <li><a id="logout">Logout</a></li>
+                    <script src="../../public/js/logout.js"></script>
+                </ul>
+            </li>
             <li><a href="#information">About</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="listtempatwisata(notlogin).php">Tempat Wisata</a></li>
+                    <li><a href="listtempatwisata(login).php">Tempat Wisata</a></li>
                     <!-- <li><a href="#">Akomodasi</a></li> -->
                 </ul>
             </li>
@@ -25,6 +32,7 @@
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
+    <!-- <script src="../../public/js/login.js"></script> -->
     <div class="maintitle">
         <h1>TRAVELUTION</h1>
         <h2>"Tentukan Perjalanan Sesuai Keinginanmu"</h2>
