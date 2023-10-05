@@ -1,8 +1,8 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve the form data
-    $username = $_GET["username"];
-    $password = $_GET["password"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     $host = "172.21.0.3";
     $port = "3306";
@@ -28,33 +28,35 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             {
                 $data = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($data["password"] == $password) {
-                    $redirect_url = "../app/views/dashboard.php"; // Replace with your desired URL
-
-                    // Perform the redirection
-                    header("Location: $redirect_url");
+                    $data = ['message' => 'Success login'];
+                    echo json_encode($data);
 
                     // Make sure to exit or stop further script execution to prevent unintended output
                     exit;
                 }
                 else
                 {
-                    echo "Wrong password";
+                    $data = ['message' => 'Wrong password'];
+                    echo json_encode($data);
                 }
             }
             else
             {
-                echo $username;
-                echo "Wrong username";
+                $data = ['message' => 'Wrong username'];
+                echo json_encode($data);
             }
         }
         else {
             // Data is missing or invalid, display an error message
-            echo "Please fill in all the fields.";
+            $data = ['message' => 'Fill the blanks'];
+            echo json_encode($data);
         }
     } catch (PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
+        $data = ['message' => 'Connection failed'];
+        echo json_encode($data);
     }
 } else {
-    echo "Access denied.";
+    $data = ['message' => 'Access denied'];
+    echo json_encode($data);
 }
 ?>

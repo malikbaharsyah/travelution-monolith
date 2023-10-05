@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteRule ^$ /app/views/landingpage.php
+RewriteRule ^login$ /app/views/login.php
+RewriteRule ^signup$ /app/views/signup.php
+RewriteRule ^add-destination$ /app/views/adddestination.php
+RewriteRule ^change-information$ /app/views/changeinformation.php
+RewriteRule ^dashboard$ /app/views/dashboard.php
+RewriteRule ^edit-destination$ /app/views/editdestination.php
+RewriteRule ^info-tempat-wisata$ /app/views/infotempatwisata(notlogin).php
+RewriteRule ^list-tempat-wisata$ /app/views/listtempatwisata(notlogin).php
+RewriteRule ^pilih-wisata$ /app/views/piliheditwisata.php
+RewriteRule ^profile$ /app/views/profileinformation.php
+RewriteRule ^reservation$ /app/views/reservationmenu.php
+
+RewriteCond %{REQUEST_METHOD} ^POST$
+RewriteRule ^api/login$ src/loginCheck.php
+RewriteRule ^api/signup$ src/signup.php
+
+RewriteCond %{REQUEST_METHOD} ^GET$
+
+RewriteCond %{REQUEST_METHOD} ^PUT$
+
+RewriteCond %{REQUEST_METHOD} ^DELETE$
