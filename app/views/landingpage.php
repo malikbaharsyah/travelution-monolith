@@ -18,7 +18,7 @@
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
                     <li><a href="listtempatwisata(notlogin).php">Tempat Wisata</a></li>
-                    <!-- <li><a href="#">Akomodasi</a></li> -->
+                    <li><a href="listakomodasi(notlogin).php">Akomodasi</a></li>
                 </ul>
             </li>
             <li><a href="#maintitle">Home</a></li>

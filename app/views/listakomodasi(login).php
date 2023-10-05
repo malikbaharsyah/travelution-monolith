@@ -34,7 +34,7 @@
         </ul>
     </div>
     <div class="searchandsorted">
-        <h1>Cari Tempat:</h1>
+        <h1>Cari Akomodasi:</h1>
         <div class="search">
             <input type="text" placeholder="Search" id="search" name="search">
             <!-- <label for="search">Search</label> -->
