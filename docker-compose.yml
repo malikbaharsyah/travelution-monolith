@@ -2,13 +2,20 @@ version: '3.3'
 services:
   web:
     image: tubes-1:latest
+    networks:
+      mynetwork:
+        ipv4_address: 172.21.0.2
     build: .
     volumes:
       - .:/var/www/html
+      - ./php.ini:/usr/local/etc/php/conf.d/php.ini
     ports:
       - 80:80
   database:
     image: mysql
+    networks:
+      mynetwork:
+        ipv4_address: 172.21.0.3
     volumes:
       - ./database:/var/lib/mysql
       - ./travelution.sql:/docker-entrypoint-initdb.d/travelution.sql
@@ -17,4 +24,11 @@ services:
       MYSQL_DATABASE: travelution_database
     ports:
       - 3306:3306
-  
+networks:
+  mynetwork:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.21.0.0/16
+          gateway: 172.21.0.1

@@ -10,14 +10,21 @@
     <title>Travelution</title>
 </head>
 <body>
-    <div class="login">
+    <!-- <div class="login">
         <h1>Login Menu</h1>
         <h2>Username:</h2>
         <input type="text" name="username" id="username" placeholder="Username">
         <h2>Password:</h2>
         <input type="password" name="password" id="password" placeholder="Password">
         <p>Belum punya akun, <a href="signup.php">daftar dulu</a></p>
-        <button type="submit" name="submit" id="submit">Login</button>
+        <button type="submit" name="submit" id="submit">Login</button> -->
+    <div class="login">
+        <h1>Login Menu</h1>
+        <form action="../../src/loginCheck.php" method="get">
+        Username: <input type="text" name="username" placeholder="Username"><br>
+        Password: <input type="text" name="password" placeholder="Password"><br>
+        <input type="submit">
+        </form>
     </div>
     <script src="../../public/js/login.js"></script>
 </body>
