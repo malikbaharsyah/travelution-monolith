@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/listtempatwisata.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <li><a href="#">Jason</a>
                 <ul class="profiledropdownadmin">
                     <li><a href="profileinformation.php">Profil</a></li>
-                    <li><a href="selecteditdestination.php">Edit Destination</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
                     <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
                     <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
@@ -49,14 +50,14 @@
         </div>
     </div>
     <div class="buttonkonfirmasi">
-        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="dashboard.php">Konfirmasi Pemesanan</a></button>
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="konfirmasipesanan.php">Konfirmasi Pemesanan</a></button>
     </div>
     <div class="listdestination">
         <div class="destinationbox">
             <a href="infotempatwisata(login).php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Tempat AB</h2>
-            <h3>Bogor, Indonesia</h3>
+            <h2 id="namatempat">Tempat AAA</h2>
+            <h3 id="lokasitempat">Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">

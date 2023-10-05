@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../package/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/piliheditwisata.css">
@@ -15,7 +15,7 @@
             <li><a href="#">Jason</a>
                 <ul class="profiledropdownadmin">
                     <li><a href="profileinformation.php">Profil</a></li>
-                    <li><a href="selecteditdestination.php">Edit Destination</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
                     <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
                     <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
@@ -51,12 +51,12 @@
     <div class="buttonkonfirmasi">
         <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="adddestination.php">Add New Destination</a></button>
     </div>
-    <div class="listdestination">
+    <div class="listdestination" id="listdestination">
         <div class="destinationbox">
             <a href="editdestination.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Tempat AB</h2>
-            <h3>Bogor, Indonesia</h3>
+            <h2><span id="namatempat"></span></h2>
+            <h3><span id="lokasitempat"></span></h3>
             </a>
         </div>
         <div class="destinationbox">
@@ -143,43 +143,10 @@
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
-        <div class="destinationbox">
-            <a href="editdestination.php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="editdestination.php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="editdestination.php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="editdestination.php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Stravel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="editdestination.php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
     </div>
     <script src="../../public/js/listtempatwisata.js"></script>
+    <script src="../../public/js/editinfo.js"></script>
+    <script src="../../public/js/addtempatwisata.js"></script>
     <!-- <div class="pagination-page">
         <ul>
             <li><a href="#">1</a></li>

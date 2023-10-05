@@ -26,7 +26,7 @@ file.addEventListener("change", function () {
 });
 
 deleteButton.addEventListener("click", function () {
-  const confirmDelete = confirm("Are you sure you want to delete the photo?");
+  const confirmDelete = confirm("Yakin mau hapus foto profil?");
   if (confirmDelete) {
     localStorage.removeItem("profileImage");
     image.setAttribute("src", "../../public/package/blankpp.jpg");

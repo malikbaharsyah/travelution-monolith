@@ -50,7 +50,7 @@
             <h2>Email:</h2>
             <input type="text" name="email" id="email" placeholder="Email">
             <h2>Phone Number:</h2>
-            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number">
         </div>
         <button type="submit" name="submit" id="submit">Change</button>
     </div>

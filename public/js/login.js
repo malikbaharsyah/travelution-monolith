@@ -12,6 +12,6 @@ loginBtn.addEventListener('click', function () {
         window.location.href = "../../app/views/dashboard.php";
         usernameLink.textContent = enteredUsername;
     } else {
-        alert("Username or password is incorrect. Please try again.");
+        alert("Username atau password salah! Coba lagi ya!");
     }
 });
