@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
         // Example query
-        $sql = "SELECT username, password FROM Account WHERE username = '$username'"; // Change this to your table name
+        $sql = "SELECT * FROM Account WHERE username = '$username'"; // Change this to your table name
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
     
@@ -27,7 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             if ($stmt->rowCount() > 0)
             {
                 $data = $stmt->fetch(PDO::FETCH_ASSOC);
-                if ($data["password"] == $password) {
+                if ($data["Password"] == $password) {
+                    session_start();
+                    $_SESSION["Username"] = $username;
+                    $_SESSION["Password"] = $password;
+                    $_SESSION["FirstName"] = $data["FirstName"];
+                    $_SESSION["LastName"] = $data["LastName"];
+                    $_SESSION["Email"] = $data["Email"];
+                    $_SESSION["PhoneNumber"] = $data["PhoneNumber"];
+                    $_SESSION["Role"] = $data["Role"];
                     $redirect_url = "../app/views/dashboard.php"; // Replace with your desired URL
 
                     // Perform the redirection
@@ -48,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             }
         }
         else {
-            // Data is missing or invalid, display an error message
             echo "Please fill in all the fields.";
         }
     } catch (PDOException $e) {
