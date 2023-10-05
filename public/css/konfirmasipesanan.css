@@ -97,76 +97,84 @@ body{
     margin-left: -140px;
 }
 
-.destination-picture{
-    position: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 40%;
-    margin-left: 20px;
+.konfirmasipemesanan h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.listpemesanan h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.listpemesanan table{
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.destination-info{
-    margin-left: 560px;
-    margin-top: -800px;
-}
-
-.destination-info h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
-    margin-bottom: 30px;
-}
-
-.destination-info h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
     margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    text-align: center;
+    background-color: white;
 }
 
-.destination-info h3{
+.listpemesanan table, th, td{
+    padding: 10px;
+}
+
+.listpemesanan th{
+    background-color: rgb(99, 0, 108);
+    color: white;
+}
+
+.listpemesanan td{
+    border-bottom: 1px solid #ddd;
+}
+
+.listpemesanan tr:nth-child(odd){
+    background-color: #f3f3f3;
+}
+
+.totalharga h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    width: 250px;
+    margin-top: -20px;
+    margin-left: 40px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.destination-info p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    margin-bottom: 1px;
-    margin-right: 40px;
-}
-
-.custom-button{
-    width: 200px;
-    padding: 20px 40px 20px 40px;
+#buttonkonfirmasi{
+    width: 210px;
+    padding: 12px 18px 12px 18px;
     border: 2px solid #3498db;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     outline: none;
     background-color: rgb(138, 0, 219);
     color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    left: 660px;
-    top: 70px;
+    margin-left: 650px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-decoration: none;
-    margin-bottom: 120px;
 }
 
-#reservasi{
-    margin-right: 700px;
-}
-
-.custom-button a{
+#buttonkonfirmasi a{
     text-decoration: none;
     color: white;
-    text-align: center;
 }
 
-.custom-button:hover{
+#buttonkonfirmasi:hover{
     background-color: rgb(99, 0, 108);
     color: white;
     cursor: pointer;

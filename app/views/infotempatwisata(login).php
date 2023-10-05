@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/infotempatwisata.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
@@ -37,8 +38,8 @@
         <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
     </div>
     <div class="destination-info">
-        <h1>Tempat A</h1>
-        <h2>Bandung, Indonesia</h2>
+        <h1 id="infonamatempat">Tempat AAB</h1>
+        <h2 id="infolokasitempat">Bandung, Indonesia</h2>
         <h3>Informasi:</h3>
         <p>Harga: Rp. 100.000</p>
         <p>Waktu Operasional: 08.00 - 17.00</p>
@@ -53,8 +54,8 @@
         <p>Telepon: 08123456789</p>
     </div>
     <div class="button-menu">
-        <button class="button custom-button" id="Reservasi"><a href="reservationmenu.php">Reservasi</a></button>
-        <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button>
+        <button class="button custom-button" id="reservasi"><a href="reservationmenu.php">Reservasi</a></button>
+        <!-- <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button> -->
     </div>    
 </body>
 </html>

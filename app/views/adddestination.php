@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../package/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/adddestination.css">
@@ -59,5 +59,6 @@
         </div>
         <button type="submit" name="submit" id="submit"><a href="piliheditwisata.php">Submit</a></button>
     </div>
+    <script src="../../public/js/addtempatwisata.js"></script>
 </body>
 </html>

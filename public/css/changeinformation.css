@@ -206,8 +206,8 @@ body{
     outline: none;
 }
 
-.emailphone #phonenumber{
-    width: 115px;
+.emailphone #phone{
+    width: 125px;
     padding: 10px;
     border: 2px solid #3498db;
     border-radius: 5px;
