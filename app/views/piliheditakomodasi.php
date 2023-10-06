@@ -148,12 +148,11 @@
     <script src="../../public/js/listtempatwisata.js"></script>
     <script src="../../public/js/editinfo.js"></script>
     <script src="../../public/js/addtempatwisata.js"></script>
-    <!-- <div class="pagination-page">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
+    <div class="pagination-page">
+        <ul id="pagination-list">
+            <a href="#">&laquo;</a>
         </ul>
-    </div> -->
+    </div>    
+    <script src="../../public/js/pagination.js"></script>
 </body>
 </html>
