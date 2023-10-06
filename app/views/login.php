@@ -20,12 +20,13 @@
         <button type="submit" name="submit" id="submit">Login</button> -->
     <div class="login">
         <h1>Login Menu</h1>
-        <form action="../../src/loginCheck.php" method="get">
-        Username: <input type="text" name="username" placeholder="Username"><br>
-        Password: <input type="text" name="password" placeholder="Password"><br>
-        <input type="submit">
-        </form>
+        <form onsubmit="login(event)">
+        Username: <input type="text" name="username" id="username" placeholder="Username"><br>
+        Password: <input type="text" name="password" id="password" placeholder="Password"><br>
+        <input type="submit" onclick="login(event)">
+        </form> 
     </div>
+    <script src="../../public/js/httprequest.js"></script>
     <script src="../../public/js/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(249, 218, 255)
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar ul {
+    width: auto;
+    list-style-type: none;
+    margin-left: -8px;
+    margin-top: -8px;
+    overflow: hidden;
+    background-color: rgb(99, 0, 108);
+  }
+
+.navbar ul li ul.profiledropdown li{
+    display: block;
+}
+
+.navbar ul li ul.profiledropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar ul li ul.profiledropdownadmin li{
+  display: block;
+}
+
+.navbar ul li ul.profiledropdownadmin{
+  width: 220px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.navbar ul li ul.menudropdown li{
+    display: block;
+}
+
+.navbar ul li ul.menudropdown{
+    float: left;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+  
+.navbar li {
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 26px;
+    text-decoration: none;
+}
+
+.navbar li img {
+    width: 95px;
+    height: 40px;
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+}
+  
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.navbar li:hover ul.profiledropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+}
+
+.navbar li:hover ul.profiledropdownadmin{
+  display: block;
+  margin-top: -1px;
+  margin-left: -161px;
+}
+
+.navbar li:hover ul.menudropdown{
+    display: block;
+    margin-top: -1px;
+    margin-left: -140px;
+}
+
+.createtravelplan h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.listrencanaperjalanan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.box-rencanaperjalanan{
+    width: 90%;
+    height: 65px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #6D4CF0;
+    color: white;
+    border-radius: 15px;
+}
+
+.box-rencanaperjalanan:hover{
+    background-color: #4B2CCF;
+    cursor: pointer;
+}
+
+.box-rencanaperjalanan #travelplan{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.box-rencanaperjalanan a{
+    text-decoration: none;
+    color: white;
+}
+
+.box-rencanaperjalanan h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#addtravelplan{
+    width: 250px;
+    padding: 12px 18px 12px 18px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+    background-color: rgb(138, 0, 219);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: inline-block;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 640px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#addtravelplan a{
+    text-decoration: none;
+    color: white;
+}
+
+#addtravelplan:hover{
+    background-color: rgb(99, 0, 108);
+    color: white;
+    cursor: pointer;
+}

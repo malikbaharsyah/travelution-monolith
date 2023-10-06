@@ -7,20 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/infotempatwisata.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
-            <li><a href="#">Menu</a>
-                <ul class="menudropdown">
-                    <li><a href="#">Tempat Wisata</a></li>
-                    <!-- <li><a href="#">Akomodasi</a></li> -->
+            <li><a href="#">Jason</a>
+                <ul class="profiledropdownadmin">
+                    <li><a href="profileinformation.php">Profil</a></li>
+                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
+                    <li><a href="piliheditakomodasi.php">Edit Accomodation</a></li>
+                    <li><a id="logout">Logout</a></li>
+                    <script src="../../public/js/logout.js"></script>
                 </ul>
             </li>
-            <li><a href="landingpage.php">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul class="menudropdown">
+                    <li><a href="listtempatwisata(login).php">Tempat Wisata</a></li>
+                    <li><a href="listakomodasi(login).php">Akomodasi</a></li>
+                </ul>
+            </li>
+            <li><a href="createtravelplan.php">TravelPlan</a></li>
+            <li><a href="dashboard.php">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
@@ -29,10 +38,9 @@
         <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
         <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
     </div>
-    <div class="verticalline"></div>
     <div class="destination-info">
-        <h1>Tempat A</h1>
-        <h2>Bandung, Indonesia</h2>
+        <h1 id="infonamatempat">Tempat AAB</h1>
+        <h2 id="infolokasitempat">Bandung, Indonesia</h2>
         <h3>Informasi:</h3>
         <p>Harga: Rp. 100.000</p>
         <p>Waktu Operasional: 08.00 - 17.00</p>
@@ -46,5 +54,9 @@
         <h3>Kontak:</h3>
         <p>Telepon: 08123456789</p>
     </div>
+    <div class="button-menu">
+        <button class="button custom-button" id="reservasi"><a href="selecttravelplan.php">Reservasi</a></button>
+        <!-- <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button> -->
+    </div>    
 </body>
 </html>

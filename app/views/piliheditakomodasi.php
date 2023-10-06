@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="icon" type="image/png" href="../../public/package/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../../public/css/listplace.css">
+    <link rel="stylesheet" href="../../public/css/pilihedit.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
@@ -34,7 +33,7 @@
         </ul>
     </div>
     <div class="searchandsorted">
-        <h1>Cari Tempat:</h1>
+        <h1>Cari Akomodasi:</h1>
         <div class="search">
             <input type="text" placeholder="Search" id="search" name="search">
             <!-- <label for="search">Search</label> -->
@@ -51,130 +50,95 @@
         </div>
     </div>
     <div class="buttonkonfirmasi">
-        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="konfirmasitravelplan.php">Konfirmasi Pemesanan</a></button>
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="addaccomodation.php">Add New Accomodation</a></button>
     </div>
-    <div class="listdestination">
+    <div class="listdestination" id="listdestination">
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2 id="namatempat">Tempat AAA</h2>
-            <h3 id="lokasitempat">Bogor, Indonesia</h3>
+            <h2><span id="namatempat"></span></h2>
+            <h3><span id="lokasitempat"></span></h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Tempat A</h2>
+            <h2>Tempat AB</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
+            <h2>Tempat AB</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Rail Haze</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Brows</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Umbrowk</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infoplace(login).php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="infoplace(login).php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="infoplace(login).php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="infoplace(login).php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="infoplace(login).php">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Stravel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="infoplace(login).php">
+            <a href="editaccomodation.php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
@@ -182,6 +146,8 @@
         </div>
     </div>
     <script src="../../public/js/listtempatwisata.js"></script>
+    <script src="../../public/js/editinfo.js"></script>
+    <script src="../../public/js/addtempatwisata.js"></script>
     <!-- <div class="pagination-page">
         <ul>
             <li><a href="#">1</a></li>

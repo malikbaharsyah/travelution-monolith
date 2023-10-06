@@ -16,7 +16,7 @@
                 <ul class="profiledropdownadmin">
                     <li><a href="profileinformation.php">Profil</a></li>
                     <li><a href="selecteditdestination.php">Edit Destination</a></li>
-                    <!-- <li><a href="../html/adddestination.html">Edit Accomodation</a></li> -->
+                    <li><a href="piliheditakomodasi.php">Edit Accomodation</a></li>
                     <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
                 </ul>
@@ -24,9 +24,10 @@
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
                     <li><a href="listtempatwisata(login).php">Tempat Wisata</a></li>
-                    <!-- <li><a href="#">Akomodasi</a></li> -->
+                    <li><a href="listakomodasi(login).php">Akomodasi</a></li>
                 </ul>
             </li>
+            <li><a href="createtravelplan.php">TravelPlan</a></li>
             <li><a href="dashboard.php">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
