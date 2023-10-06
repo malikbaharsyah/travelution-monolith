@@ -41,7 +41,7 @@
                     <tr>
                         <th>Kebutuhan</th>
                         <th>Waktu Awal</th>
-                        <th>Waktu Awal</th>
+                        <th>Waktu Akhir</th>
                         <th>Jumlah</th>
                         <th>Harga Satuan</th>
                         <th>Harga Akhir</th>
@@ -78,7 +78,7 @@
                     <tr>
                         <th>Kebutuhan</th>
                         <th>Waktu Awal</th>
-                        <th>Waktu Awal</th>
+                        <th>Waktu Akhir</th>
                         <th>Jumlah</th>
                         <th>Harga Satuan</th>
                         <th>Harga Akhir</th>

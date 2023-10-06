@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="buttonkonfirmasi">
-        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="konfirmasitravelplan.php">Konfirmasi Pemesanan</a></button>
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="konfirmasi-travel-plan">Konfirmasi Pemesanan</a></button>
     </div>
     <div class="listdestination">
         <div class="destinationbox">

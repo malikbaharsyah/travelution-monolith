@@ -22,7 +22,6 @@
                 </ul>
             </li>
             <li><a href="">Home</a></li>
-            <li><a href="#maintitle">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
