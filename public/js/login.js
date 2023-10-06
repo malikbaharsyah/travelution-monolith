@@ -11,5 +11,12 @@ const login = async (e) => {
     const lib = new Lib();
     const res = await lib.post('/api/login', formData);
     const jsonRes = JSON.parse(res);
-    console.log(jsonRes);
+    if (jsonRes["message"]=="Success login")
+    {
+        window.location.href = "/dashboard";
+    }
+    else
+    {
+        alert(jsonRes["message"])
+    }
 }

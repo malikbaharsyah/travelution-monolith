@@ -32,8 +32,9 @@
             <h2>Phone Number:</h2>
             <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
         </div>
-        <button type="submit" name="submit" id="submit">Sign Up</button>
+        <button type="submit" name="submit" id="submit" onclick="signup(event)">Sign Up</button>
     </div>
+    <script src="../../public/js/httprequest.js"></script>
     <script src="../../public/js/signup.js"></script>
 </body>
 </html>

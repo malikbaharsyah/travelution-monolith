@@ -12,8 +12,8 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="signup">Sign Up</a></li>
             <li><a href="#information">About</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
