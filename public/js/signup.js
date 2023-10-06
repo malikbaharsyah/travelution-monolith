@@ -14,7 +14,15 @@ document.getElementById("submit").addEventListener("click", function(event) {
     } else if (!validateEmail(email)) {
         alert("Masukin emailnya yang bener dong!");
     } else {
-        window.location.href = "../../app/views/login.php";
+        var data = {
+            Username: username,
+            Password: password,
+            FirstName: firstname,
+            LastName: lastname,
+            Email: email,
+            PhoneNumber: phonenumber
+        };
+        makeRequest(data, "POST", "../../src/signupphp.php", true);
     }
 });
 
