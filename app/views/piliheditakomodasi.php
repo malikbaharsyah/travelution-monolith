@@ -14,21 +14,21 @@
         <ul>
             <li><a href="#">Jason</a>
                 <ul class="profiledropdownadmin">
-                    <li><a href="profileinformation.php">Profil</a></li>
-                    <li><a href="piliheditwisata.php">Edit Destination</a></li>
-                    <li><a href="piliheditakomodasi.php">Edit Accomodation</a></li>
+                    <li><a href="profile">Profil</a></li>
+                    <li><a href="pilih-wisata">Edit Destination</a></li>
+                    <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
                     <li><a id="logout">Logout</a></li>
                     <script src="../../public/js/logout.js"></script>
                 </ul>
             </li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="listtempatwisata(login).php">Tempat Wisata</a></li>
-                    <li><a href="listakomodasi(login).php">Akomodasi</a></li>
+                    <li><a href="list-tempat-wisata-l">Tempat Wisata</a></li>
+                    <li><a href="list-akomodasi-l">Akomodasi</a></li>
                 </ul>
             </li>
-            <li><a href="createtravelplan.php">TravelPlan</a></li>
-            <li><a href="dashboard.php">Home</a></li>
+            <li><a href="create-travel-plan">TravelPlan</a></li>
+            <li><a href="dashboard">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
@@ -50,95 +50,95 @@
         </div>
     </div>
     <div class="buttonkonfirmasi">
-        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="addaccomodation.php">Add New Accomodation</a></button>
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="add-accomodation">Add New Accomodation</a></button>
     </div>
     <div class="listdestination" id="listdestination">
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2><span id="namatempat"></span></h2>
             <h3><span id="lokasitempat"></span></h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat AB</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat AB</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Rail Haze</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Brows</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Umbrowk</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="editaccomodation.php">
+            <a href="edit-accomodation">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
@@ -148,12 +148,11 @@
     <script src="../../public/js/listtempatwisata.js"></script>
     <script src="../../public/js/editinfo.js"></script>
     <script src="../../public/js/addtempatwisata.js"></script>
-    <!-- <div class="pagination-page">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
+    <div class="pagination-page">
+        <ul id="pagination-list">
+            <a href="#">&laquo;</a>
         </ul>
-    </div> -->
+    </div>    
+    <script src="../../public/js/pagination.js"></script>
 </body>
 </html>

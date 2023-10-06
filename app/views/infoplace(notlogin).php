@@ -12,15 +12,15 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="signup">Sign Up</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="listtempatwisata(notlogin).php">Tempat Wisata</a></li>
-                    <li><a href="listakomodasi(notlogin).php">Akomodasi</a></li>
+                    <li><a href="list-tempat-wisata-nl">Tempat Wisata</a></li>
+                    <li><a href="list-akomodasi-nl">Akomodasi</a></li>
                 </ul>
             </li>
-            <li><a href="landingpage.php">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
@@ -47,7 +47,7 @@
         <p>Telepon: 08123456789</p>
     </div>
     <div class="button-menu">
-        <button class="button custom-button" id="reservasi"><a href="login.php">Reservasi</a></button>
+        <button class="button custom-button" id="reservasi"><a href="login">Reservasi</a></button>
         <!-- <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button> -->
     </div>    
 </body>

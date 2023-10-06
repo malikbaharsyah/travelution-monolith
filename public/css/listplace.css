@@ -209,3 +209,37 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
+.pagination-page{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pagination-page a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 4px 12px 4px 12px;
+    margin: 2px;
+}
+
+.pagination-page a.active{
+    background-color: #000000;
+}
+
+.pagination-page a:not(.active){
+    background-color: purple;
+}
+
+.pagination-page a:hover:not(.active){
+    background-color: rgb(99, 0, 108);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}

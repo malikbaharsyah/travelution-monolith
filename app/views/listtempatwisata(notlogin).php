@@ -12,15 +12,15 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="signup">Sign Up</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="#">Tempat Wisata</a></li>
-                    <li><a href="listakomodasi(notlogin).php">Akomodasi</a></li>
+                    <li><a href="list-tempat-wisata-nl">Tempat Wisata</a></li>
+                    <li><a href="list-akomodasi-nl">Akomodasi</a></li>
                 </ul>
             </li>
-            <li><a href="landingpage.php">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
@@ -171,12 +171,11 @@
 
     </div>
     <script src="../../public/js/listtempatwisata.js"></script>
-    <!-- <div class="pagination-page">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
+    <div class="pagination-page">
+        <ul id="pagination-list">
+            <a href="#">&laquo;</a>
         </ul>
-    </div> -->
+    </div>    
+    <script src="../../public/js/pagination.js"></script>
 </body>
 </html>

@@ -17,11 +17,11 @@
             <li><a href="#information">About</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="listtempatwisata(notlogin).php">Tempat Wisata</a></li>
-                    <li><a href="listakomodasi(notlogin).php">Akomodasi</a></li>
+                    <li><a href="list-tempat-wisata-nl">Tempat Wisata</a></li>
+                    <li><a href="list-akomodasi-nl">Akomodasi</a></li>
                 </ul>
             </li>
-            <li><a href="#maintitle">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
     </div>
