@@ -40,8 +40,8 @@
             </select>
         </div>
     </div>
-    <div class="listdestination">
-        <div class="destinationbox">
+    <div class="listdestination" id="destinationContainer">
+        <!-- <div class="destinationbox">
             <a href="infotempatwisata(notlogin).php">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat AB</h2>
@@ -166,7 +166,9 @@
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
-        </div>
+        </div> -->
+        <script src="../../public/js/loadwisata.js"></script>
+
     </div>
     <script src="../../public/js/listtempatwisata.js"></script>
     <!-- <div class="pagination-page">
