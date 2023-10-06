@@ -46,13 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
                 else
                 {
-                    $data = ['message' => 'Wrong password'];
+                    $data = ['message' => 'Wrong username or password'];
                     echo json_encode($data);
                 }
             }
             else
             {
-                $data = ['message' => 'Wrong username'];
+                $data = ['message' => 'Wrong username or password'];
                 echo json_encode($data);
             }
         }

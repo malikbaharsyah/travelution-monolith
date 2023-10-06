@@ -13,8 +13,9 @@ RewriteRule ^profile$ /app/views/profileinformation.php
 RewriteRule ^reservation$ /app/views/reservationmenu.php
 
 RewriteCond %{REQUEST_METHOD} ^POST$
-RewriteRule ^api/login$ src/loginCheck.php
-RewriteRule ^api/signup$ src/signup.php
+RewriteRule ^api/login$ src/loginServerSide.php
+RewriteRule ^api/logout$ src/logoutServerSide.php
+RewriteRule ^api/signup$ src/signupServerSide.php
 
 RewriteCond %{REQUEST_METHOD} ^GET$
 
