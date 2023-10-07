@@ -174,7 +174,7 @@
             </a>
         </div>
     </div>
-    <script src="../../public/js/listtempatwisata.js"></script>
+    <script src="../../public/js/placeselection.js"></script>
     <script src="../../public/js/editinfo.js"></script>
     <script src="../../public/js/addtempatwisata.js"></script>
     <div class="pagination-page">

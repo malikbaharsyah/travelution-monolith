@@ -87,14 +87,14 @@
             <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2 id="namatempat">Tempat AAA</h2>
-            <h3 id="lokasitempat">Bogor, Indonesia</h3>
+            <h3 id="lokasitempat">Jawa Barat</h3>
             </a>
         </div>
         <div class="destinationbox">
             <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat A</h2>
-            <h3>Bogor, Indonesia</h3>
+            <h3>Jawa Tengah</h3>
             </a>
         </div>
         <div class="destinationbox">
@@ -210,7 +210,7 @@
             </a>
         </div>
     </div>
-    <script src="../../public/js/listtempatwisata.js"></script>
+    <script src="../../public/js/placeselection.js"></script>
     <div class="pagination-page">
         <ul id="pagination-list">
             <a href="#">&laquo;</a>
