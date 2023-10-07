@@ -12,7 +12,7 @@ CREATE TABLE AccountProfile(
     Username VARCHAR(40) NOT NULL,
     ProfileImg VARCHAR(15),
     FOREIGN KEY (Username) REFERENCES Account(Username)
-)
+);
 
 insert into Account(Username, Password, FirstName, LastName, Email, PhoneNumber, Role) values ('sforcer0', 'mP(x''2C9"tsY', 'Susann', 'Forcer', 'sforcer0@baidu.com', '173-969-2038', 'User');
 insert into Account(Username, Password, FirstName, LastName, Email, PhoneNumber, Role) values ('jpedden1', '1LY"I.?>9DM', 'Johnathan', 'Pedden', 'jpedden1@comcast.net', '931-943-2804', 'User');
