@@ -28,16 +28,46 @@
         <h1>Cari Akomodasi:</h1>
         <div class="search">
             <input type="text" placeholder="Search" id="search" name="search">
+            <!-- <label for="search">Search</label> -->
         </div>
-        <div class="sorted">
-            <h1>Urutkan:</h1>
-            <select name="sorted" id="sorted">
-                <option value="Termurah">Termurah</option>
-                <option value="Termahal">Termahal</option>
-                <option value="Rating Tertinggi">Rating Tertinggi</option>
-                <option value="Banyak Komentar">Banyak Komentar</option>
-                <option value="Huruf A-Z">Huruf A-Z</option>
-            </select>
+        <div class="sortfill">
+            <div class="sorted">
+                <h1>Urutkan:</h1>
+                <select name="sorted" id="sorted">
+                    <option value="Termurah">Termurah</option>
+                    <option value="Termahal">Termahal</option>
+                    <option value="Rating Tertinggi">Rating Tertinggi</option>
+                    <option value="Banyak Komentar">Banyak Komentar</option>
+                    <option value="Huruf A-Z">Huruf A-Z</option>
+                </select>
+            </div>
+            <div class="filter1">
+                <h1>Filter Tipe:</h1>
+                <select name="filtertempat" id="filtertempat">
+                    <option value="Semua">Semua</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Resort">Resort</option>
+                    <option value="Apartemen">Apartemen</option>
+                    <option value="Homestay">Homestay</option>
+                    <option value="Guest House">Guest House</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="Cottage">Cottage</option>
+                </select>
+            </div>
+            <div class="filter2">
+                <h1>Filter Daerah:</h1>
+                <select name="filterdaerah" id="filterdaerah">
+                    <option value="Semua">Semua</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="listdestination">
