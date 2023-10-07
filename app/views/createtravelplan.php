@@ -20,19 +20,19 @@
         <h1>Buat Rencana Perjalananmu...</h1>
         <div class="listrencanaperjalanan">
             <div class="box-rencanaperjalanan">
-                <a href="konfirmasipesanan.php">
+                <a href="konfirmasi-pesanan">
                 <label id="travelplan">Rencana Perjalanan 1</label>
                 <h2>19 Januari 2024 - 25 Januari 2024</h2>
                 </a>
             </div>
             <div class="box-rencanaperjalanan">
-                <a href="konfirmasipesanan.php">
+                <a href="konfirmasi-pesanan">
                 <label id="travelplan">Rencana Perjalanan 2</label>
                 <h2>19 Januari 2024 - 25 Januari 2024</h2>
                 </a>
             </div>
             <div class="box-rencanaperjalanan">
-                <a href="konfirmasipesanan.php">
+                <a href="konfirmasi-pesanan">
                 <label id="travelplan">Rencana Perjalanan 3</label>
                 <h2>19 Januari 2024 - 25 Januari 2024</h2>
                 </a>

@@ -10,7 +10,7 @@ RewriteRule ^info-place-l$ /app/views/infoplace(login).php
 RewriteRule ^info-place-nl$ /app/views/infoplace(notlogin).php
 RewriteRule ^konfirmasi-pesanan$ /app/views/konfirmasipesanan.php
 RewriteRule ^konfirmasi-travel-plan$ /app/views/konfirmasitravelplan.php
-RewriteRule ^landingpage$ /app/views/landingpage.php
+RewriteRule ^$ /app/views/landingpage.php
 RewriteRule ^list-akomodasi-l$ /app/views/listakomodasi(login).php
 RewriteRule ^list-akomodasi-nl$ /app/views/listakomodasi(notlogin).php
 RewriteRule ^list-tempat-wisata-l$ /app/views/listtempatwisata(login).php

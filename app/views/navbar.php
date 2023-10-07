@@ -56,9 +56,10 @@
                     <li><a href="list-akomodasi-nl">Akomodasi</a></li>
                 </ul>
             </li>
-            <li><a href="landingpage">Home</a></li>
+            <li><a href="#" id="homeLink">Home</a></li>
             <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
         </ul>
+        <script src="../../public/js/home.js"></script>
     </div>';
     }
 ?>

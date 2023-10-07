@@ -59,126 +59,126 @@
     </div>
     <div class="listdestination">
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat AB</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat A</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Rail Haze</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Brows</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Umbrowk</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Stravel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="infotempatwisata(notlogin).php">
+            <a href="info-place-nl">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
