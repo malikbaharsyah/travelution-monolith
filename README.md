@@ -52,15 +52,28 @@ Aplikasi ini adalah aplikasi web sederhana yang dapat digunakan untuk melakukan 
 # Screenshoot Aplikasi
 Landing Page & Dashboard
 
+![ss](screenshoot/Screenshot 2023-10-07 215248.png)
+![ss](screenshoot/Screenshot 2023-10-07 215313.png)
+![ss](screenshoot/Screenshot 2023-10-07 215329.png)
+
 Sign Up & Login
 
+![ss](screenshoot/Screenshot 2023-10-07 215718.png)
+![ss](screenshoot/Screenshot 2023-10-07 215824.png)
+
 Profile Menu & Change Information User
+
+![ss](screenshoot/Screenshot 2023-10-07 221145.png)
+![ss](screenshoot/Screenshot 2023-10-07 221152.png)
 
 Membuat Travel Plan
 
 List Destinasi & Akomodasi
 
 CRUD Destinasi & Akomodasi
+
+![ss](screenshoot/Screenshot 2023-10-07 221255.png)
+![ss](screenshoot/Screenshot 2023-10-07 221320.png)
 
 Reservasi Travel Plan
 
