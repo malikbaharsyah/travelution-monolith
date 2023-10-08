@@ -52,7 +52,7 @@
                 </div>
                 <script src="../../public/js/placeselection.js"></script>
             </div>
-            <button type="submit" class="buttonfilter" id="buttonfilter" onclick="loadDestination(event)">Apply Filter</button>
+            <button type="submit" class="buttonfilter" id="buttonfilter" >Apply Filter</button>
             <script src="../../public/js/httprequest.js"></script>
             <script src="../../public/js/loadPlaces.js"></script>
         </div>

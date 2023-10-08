@@ -1,36 +1,108 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded" , async () => {
     const searchInput = document.getElementById("search");
     const sortedSelect = document.getElementById("sorted");
-    const listDestination = document.querySelector(".listdestination");
-    const destinationBoxes = document.querySelectorAll(".destinationbox");
     const toggleButton1 = document.getElementById("toggle-dropdown1");
     const dropdown1 = document.getElementById("type-dropdown");
     const toggleButton2 = document.getElementById("toggle-dropdown2");
     const dropdown2 = document.getElementById("location-dropdown");
+    const filterButton = document.getElementById("buttonfilter");
+
+    const loadDestination = async (e) => {
+        if (e)
+        e.preventDefault();
     
-    function sortDestinationBoxesAZ() {
-        const destinationBoxesArray = Array.from(destinationBoxes);
-        destinationBoxesArray.sort((boxA, boxB) => {
-            const nameA = boxA.querySelector("h2").textContent.trim().toLowerCase();
-            const nameB = boxB.querySelector("h2").textContent.trim().toLowerCase();
-            return nameA.localeCompare(nameB);
+        function getTypeFilter() {
+            const checkboxes = document.querySelectorAll('#type-dropdown input[type="checkbox"]:checked');
+            const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+            return selectedValues;
+        }
+    
+        function getLocationFilter() {
+            const checkboxes = document.querySelectorAll('#location-dropdown input[type="checkbox"]:checked');
+            const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+            return selectedValues;
+        }
+    
+        const sortedSelect = document.getElementById("sorted").value;
+        const searchInput = document.getElementById("search").value;
+    
+        const typeArray = getTypeFilter();
+        const locationArray = getLocationFilter();
+        const typeString = typeArray.join(', ');
+        const locationString = locationArray.join(', ');
+        console.log(sortedSelect);
+        const formData = new FormData();
+        formData.append("category", typeString);
+        formData.append("location", locationString);
+        formData.append("search", searchInput);
+        if (sortedSelect === "Termurah")
+        {
+            formData.append("sortby", "PlacePrice");
+            formData.append("order", "ASC");
+    
+        }
+        else if (sortedSelect === "Termahal")
+        {
+            formData.append("sortby", "PlacePrice");
+            formData.append("order", "DESC");
+        }
+        else if (sortedSelect === "Huruf A-Z")
+        {
+            formData.append("sortby", "PlaceName");
+            formData.append("order", "ASC");
+        }
+        else
+        {
+            formData.append("sortby", "");
+            formData.append("order", "");
+        }
+    
+        const lib = new Lib();
+        const res = await lib.post('/api/filterPlaces', formData);
+        console.log(res);
+        const jsonRes = JSON.parse(res);
+        
+        var container = document.getElementById("destinationContainer");
+        
+        var divs = container.querySelectorAll('div');
+        for (var i = 0; i < divs.length; i++) {
+            var div = divs[i];
+            div.parentNode.removeChild(div);
+        }
+    
+    
+        jsonRes["message"].forEach(place => {
+            var newDiv = document.createElement("div");
+            newDiv.className = "destinationbox";
+    
+            var newLink = document.createElement("a");
+            newLink.href = "/info-place";
+    
+            var newImage = document.createElement("img");
+            newImage.src = "../../public/package/purpletravel.jpg";
+            newImage.alt = "destination1";
+    
+            var newH2 = document.createElement("h2");
+            newH2.textContent = place["PlaceName"];
+    
+            var newH3 = document.createElement("h3");
+            newH3.textContent = place["PlaceLocation"];
+    
+            newDiv.appendChild(newImage);
+            newDiv.appendChild(newH2);
+            newDiv.appendChild(newH3);
+    
+            newDiv.appendChild(newLink);
+            container.appendChild(newDiv);
         });
-        destinationBoxesArray.forEach((box) => {
-            listDestination.appendChild(box);
-        });
+    
+        
     }
 
-    function filterDestinationBoxes() {
-        var searchValue = searchInput.value.toLowerCase();
-        destinationBoxes.forEach(function (box) {
-            var h2Text = box.querySelector("h2").textContent.toLowerCase();
-            if (h2Text.includes(searchValue)) {
-                box.style.display = "block";
-            } else {
-                box.style.display = "none";
-            }
-        });
-    }
+    await loadDestination();
+
+    const lib = new Lib();
+    const debouncedLoadDestination = lib.debounce(loadDestination);
 
     toggleButton1.addEventListener("click", function () {
         dropdown1.style.display = dropdown1.style.display === "block" ? "none" : "block";
@@ -40,25 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdown2.style.display = dropdown2.style.display === "block" ? "none" : "block";
     });
 
-    // filterDaerahSelect.addEventListener("change", function () {
-    //     const selectedValue = filterDaerahSelect.value;
-    //     destinationBoxes.forEach(function (box) {
-    //         const lokasiTempat = box.querySelector("h3").textContent;
-    //         if (selectedValue === "Semua" || selectedValue === lokasiTempat) {
-    //             box.style.display = "block";
-    //         } else {
-    //             box.style.display = "none";
-    //         }
-    //     });
-    // });
+    filterButton.addEventListener('click', loadDestination);
 
-    sortedSelect.addEventListener("change", function () {
-        if (sortedSelect.value === "Huruf A-Z") {
-            sortDestinationBoxesAZ();
-        }
-    });
+    sortedSelect.addEventListener("change", loadDestination);
 
-    searchInput.addEventListener("input", function () {
-        filterDestinationBoxes();
-    });
+    searchInput.addEventListener("input", debouncedLoadDestination);
 });
