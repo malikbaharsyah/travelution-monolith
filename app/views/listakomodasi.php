@@ -59,7 +59,7 @@
                 <h1>Filter Daerah:</h1>
                 <div class="filter-place">
                     <button id="toggle-dropdown2" class="dropdown-button">Pilih Daerah</button>
-                    <div class="dropdown-select" id="place-dropdown">
+                    <div class="dropdown-select" id="location-dropdown">
                         <label for="semua"><input type="checkbox" id="semua" value="semua">Semua</label>
                         <label for="Bali"><input type="checkbox" id="Bali" value="Bali">Bali</label>
                         <label for="Banten"><input type="checkbox" id="Banten" value="Banten">Banten</label>
@@ -72,7 +72,7 @@
                 </div>
                 <script>
                     const toggleButton2 = document.getElementById("toggle-dropdown2");
-                    const dropdown2 = document.getElementById("place-dropdown");
+                    const dropdown2 = document.getElementById("location-dropdown");
 
                     toggleButton2.addEventListener("click", function () {
                         dropdown2.style.display = dropdown2.style.display === "block" ? "none" : "block";

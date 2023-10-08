@@ -35,183 +35,33 @@
             <div class="filter1">
                 <h1>Filter Tipe:</h1>
                 <div class="filter-type">
-                    <button id="toggle-dropdown1" class="dropdown-button">Pilih Tipe Tempat</button>
+                    <button id="toggle-dropdown1" class="dropdown-button" onclick="getCategory(event)">Pilih Tipe Tempat</button>
                     <div class="dropdown-select" id="type-dropdown">
-                        <label for="semua"><input type="checkbox" id="semua" value="semua">Semua</label>
-                        <label for="pantai"><input type="checkbox" id="pantai" value="pantai">Pantai</label>
-                        <label for="gunung"><input type="checkbox" id="gunung" value="gunung">Gunung</label>
-                        <label for="perkemahan"><input type="checkbox" id="perkemahan" value="perkemahan">Perkemahan</label>
-                        <label for="taman"><input type="checkbox" id="taman" value="taman">Taman</label>
-                        <label for="museum"><input type="checkbox" id="museum" value="museum">Museum</label>
-                        <label for="kuliner"><input type="checkbox" id="kuliner" value="kuliner">Kuliner</label>
+                        <script src="../../public/js/getCategory.js"></script> 
                     </div>
                 </div>
-                <script>
-                    const toggleButton1 = document.getElementById("toggle-dropdown1");
-                    const dropdown1 = document.getElementById("type-dropdown");
-
-                    toggleButton1.addEventListener("click", function () {
-                        dropdown1.style.display = dropdown1.style.display === "block" ? "none" : "block";
-                    });
-                </script>
+                <script src="../../public/js/placeselection.js"></script>
             </div>
             <div class="filter2">
                 <h1>Filter Daerah:</h1>
                 <div class="filter-place">
-                    <button id="toggle-dropdown2" class="dropdown-button">Pilih Daerah</button>
-                    <div class="dropdown-select" id="place-dropdown">
-                        <label for="semua"><input type="checkbox" id="semua" value="semua">Semua</label>
-                        <label for="Bali"><input type="checkbox" id="Bali" value="Bali">Bali</label>
-                        <label for="Banten"><input type="checkbox" id="Banten" value="Banten">Banten</label>
-                        <label for="Jakarta"><input type="checkbox" id="Jakarta" value="Jakarta">Jakarta</label>
-                        <label for="Jawa Barat"><input type="checkbox" id="Jawa Barat" value="Jawa Barat">Jawa Barat</label>
-                        <label for="Jawa Tengah"><input type="checkbox" id="Jawa Tengah" value="Jawa Tengah">Jawa Tengah</label>
-                        <label for="Yogyakarta"><input type="checkbox" id="Yogyakarta" value="Yogyakarta">Yogyakarta</label>
-                        <label for="Jawa Timur"><input type="checkbox" id="Jawa Timur" value="Jawa Timur">Jawa Timur</label>
+                    <button id="toggle-dropdown2" class="dropdown-button" onclick="getLocation(event)">Pilih Daerah</button>
+                    <div class="dropdown-select" id="location-dropdown">
+                        <script src="../../public/js/getLocation.js"></script>
                     </div>
                 </div>
-                <script>
-                    const toggleButton2 = document.getElementById("toggle-dropdown2");
-                    const dropdown2 = document.getElementById("place-dropdown");
-
-                    toggleButton2.addEventListener("click", function () {
-                        dropdown2.style.display = dropdown2.style.display === "block" ? "none" : "block";
-                    });
-                </script>
+                <script src="../../public/js/placeselection.js"></script>
             </div>
-            <button type="submit" class="buttonfilter" id="buttonfilter">Apply Filter</button>
+            <button type="submit" class="buttonfilter" id="buttonfilter" onclick="loadDestination(event)">Apply Filter</button>
+            <script src="../../public/js/httprequest.js"></script>
+            <script src="../../public/js/loadPlaces.js"></script>
         </div>
     </div>
     <div class="buttonkonfirmasi">
         <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><?php if (isset($_SESSION['Username'])) echo '<a href="konfirmasi-travel-plan">'; else echo '<a href="login">'?>Konfirmasi Pemesanan</a></button>
     </div>
-    <div class="listdestination">
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2 id="namatempat">Tempat AAA</h2>
-            <h3 id="lokasitempat">Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Tempat A</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Rail Haze</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Brows</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Umbrowk</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Stravel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
-        <div class="destinationbox">
-            <a href="info-place">
-            <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Purple Travel</h2>
-            <h3>Bogor, Indonesia</h3>
-            </a>
-        </div>
+    <div class="listdestination" id="destinationContainer">
+        
     </div>
     <script src="../../public/js/placeselection.js"></script>
     <div class="pagination-page">

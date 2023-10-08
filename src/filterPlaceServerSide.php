@@ -14,6 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     
     $params = array();
 
+    if($category == "" && $location == "" && $search == "")
+    $sql = $sql = "SELECT * from Place";
+    else
     $sql = "SELECT * from Place WHERE ";
     if ($category != "")
     {
@@ -45,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $value = $search;
         $params[$key] = $value;
     }
-
+    if($category != "" || $location != "" || $search != "")
     $sql = substr($sql, 0, -5);
 
     if ($sortby != "")
@@ -53,8 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $sql = $sql . " ORDER BY $sortby $order";
     }
 
-    if($category == "" && $location == "" && $search == "" && $sortby == "")
-    $sql = $sql = "SELECT * from Place";
+
     
     $stmt = executeSQL($sql, $params);
     

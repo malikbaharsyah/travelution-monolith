@@ -12,23 +12,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $role = 'User';
 
     try 
-    {
-        $sql = "INSERT INTO Account VALUES (:username, :password, :firstname, :lastname, :email, :phonenumber, 'User')";
-        $params = array(
-            ':username' => $username, 
-            ':password' => $password, 
-            ':firstname' => $firstname, 
-            ':lastname' => $lastname, 
-            ':email' => $email, 
-            ':phonenumber' => $phonenumber
-        );
-
+    {   $sql = "SELECT * FROM Account WHERE username = :username";
+        $params = array(':username' => $username);
         $stmt = executeSQL($sql, $params);
-        
-        $data = ['message' => 'Sign Up Success'];
-        echo json_encode($data);
-
-        exit;    
+        if ($stmt->rowCount() > 0)
+        {
+            $data = ['message' => 'Username not available'];
+            echo json_encode($data);
+            exit;  
+        }
+        else
+        {
+            $sql = "INSERT INTO Account VALUES (:username, :password, :firstname, :lastname, :email, :phonenumber, 'User')";
+            $params = array(
+                ':username' => $username, 
+                ':password' => $password, 
+                ':firstname' => $firstname, 
+                ':lastname' => $lastname, 
+                ':email' => $email, 
+                ':phonenumber' => $phonenumber
+            );
+    
+            $stmt = executeSQL($sql, $params);
+            
+            $data = ['message' => 'Sign Up Success'];
+            echo json_encode($data);
+    
+            exit;    
+        }
     }
     catch (PDOException $e)
     {
