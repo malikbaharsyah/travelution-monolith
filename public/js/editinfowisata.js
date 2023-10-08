@@ -23,6 +23,6 @@ document.getElementById("submit").addEventListener("click", function () {
             localStorage.setItem("placename", newPlacename || storedPlacename);
             localStorage.setItem("location", newLocation || storedPlacelocation);
         }
-        window.location.href = "../../app/views/piliheditwisata.php";
+        window.location.href = "pilih-wisata";
     }
 });

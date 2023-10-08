@@ -3,7 +3,7 @@ function addNewTravelPlan() {
     newDiv.className = "box-rencanaperjalanan";
 
     var link = document.createElement("a");
-    link.href = "konfirmasipesanan.php";
+    link.href = "konfirmasi-pesanan";
 
     var label = document.createElement("label");
     label.id = "travelplan";

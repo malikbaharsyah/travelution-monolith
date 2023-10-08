@@ -10,21 +10,7 @@
     <title>Travelution</title>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="login">Login</a></li>
-            <li><a href="signup">Sign Up</a></li>
-            <li><a href="#information">About</a></li>
-            <li><a href="#">Menu</a>
-                <ul class="menudropdown">
-                    <li><a href="list-tempat-wisata-nl">Tempat Wisata</a></li>
-                    <li><a href="list-akomodasi-nl">Akomodasi</a></li>
-                </ul>
-            </li>
-            <li><a href="">Home</a></li>
-            <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
-        </ul>
-    </div>
+    <?php include 'navbar.php'; ?>
     <div class="maintitle">
         <h1>TRAVELUTION</h1>
         <h2>"Tentukan Perjalanan Sesuai Keinginanmu"</h2>

@@ -51,6 +51,6 @@ document.getElementById("submit").addEventListener("click", function () {
             localStorage.setItem("email", newEmail || storedEmail);
             localStorage.setItem("phone", newPhone || storedPhone);
         }
-        window.location.href = "../../app/views/profileinformation.php";
+        window.location.href = "profile";
     }
 });

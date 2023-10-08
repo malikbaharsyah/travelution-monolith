@@ -8,6 +8,12 @@ CREATE TABLE Account(
     Role VARCHAR(20) NOT NULL
 );
 
+CREATE TABLE AccountProfile(
+    Username VARCHAR(40) NOT NULL,
+    ProfileImg VARCHAR(15),
+    FOREIGN KEY (Username) REFERENCES Account(Username)
+);
+
 insert into Account(Username, Password, FirstName, LastName, Email, PhoneNumber, Role) values ('sforcer0', 'mP(x''2C9"tsY', 'Susann', 'Forcer', 'sforcer0@baidu.com', '173-969-2038', 'User');
 insert into Account(Username, Password, FirstName, LastName, Email, PhoneNumber, Role) values ('jpedden1', '1LY"I.?>9DM', 'Johnathan', 'Pedden', 'jpedden1@comcast.net', '931-943-2804', 'User');
 insert into Account(Username, Password, FirstName, LastName, Email, PhoneNumber, Role) values ('tsnarie2', '<Ur%w)P|NQw''kW', 'Tann', 'Snarie', 'tsnarie2@ifeng.com', '823-711-5627', 'Admin');
@@ -24,19 +30,19 @@ CREATE TABLE Place(
     PlaceOpenTime TIME NOT NULL,
     PlaceCloseTime TIME NOT NULL,
     PlaceContact VARCHAR(20) NOT NULL,
-    PlaceEmail VARCHAR(50) NOT NULL,
-    PlaceWebsite VARCHAR(500) NOT NULL
+    PlaceEmail VARCHAR(50),
+    PlaceWebsite VARCHAR(500)
 );
 
 CREATE TABLE PlaceImage(
     PlaceID INT NOT NULL,
-    PlaceImg LONGBLOB NOT NULL,
+    PlaceImg VARCHAR(15) NOT NULL,
     FOREIGN KEY (PlaceID) REFERENCES Place(PlaceID)
 );
 
 CREATE TABLE PlaceVideo(
     PlaceID INT NOT NULL,
-    PlaceVideo LONGBLOB,
+    PlaceVideo VARCHAR(15) NOT NULL,
     FOREIGN KEY (PlaceID) REFERENCES Place(PlaceID)
 );
 

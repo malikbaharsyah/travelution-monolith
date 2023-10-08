@@ -21,10 +21,13 @@
     <div class="login">
         <h1>Login Menu</h1>
         <form onsubmit="login(event)">
-        Username: <input type="text" name="username" id="username" placeholder="Username"><br>
-        Password: <input type="text" name="password" id="password" placeholder="Password"><br>
+            <h2>Username:</h2>
+            <input type="text" name="username" id="username" placeholder="Username"><br>
+            <h2>Password:</h2>
+            <input type="text" name="password" id="password" placeholder="Password"><br>
+            <p>Belum punya akun, <a href="signup">daftar dulu</a></p>
         <input type="submit" onclick="login(event)">
-        </form> 
+        </form>
     </div>
     <script src="../../public/js/httprequest.js"></script>
     <script src="../../public/js/login.js"></script>

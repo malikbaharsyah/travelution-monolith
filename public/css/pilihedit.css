@@ -141,6 +141,12 @@ body{
     border-radius: 5px;
 }
 
+.sortfill{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+}
+
 .sorted #sorted{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -153,7 +159,45 @@ body{
     outline: none;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.filter1{
+    margin-left: 50px;
+}
+
+.filter1 #filtertempat{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+.filter2{
+    margin-left: 50px;
+}
+
+.filter2 #filterdaerah{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
 }
 
 .destinationbox{

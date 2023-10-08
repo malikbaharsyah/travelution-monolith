@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $_SESSION['Role'] = "admin";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,67 +15,48 @@
     <title>Travelution</title>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#">Jason</a>
-                <ul class="profiledropdownadmin">
-                    <li><a href="profile">Profil</a></li>
-                    <li><a href="pilih-wisata">Edit Destination</a></li>
-                    <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
-                    <li><a id="logout">Logout</a></li>
-                    <script src="../../public/js/logout.js"></script>
-                </ul>
-            </li>
-            <li><a href="#">Menu</a>
-                <ul class="menudropdown">
-                    <li><a href="list-tempat-wisata-l">Tempat Wisata</a></li>
-                    <li><a href="list-akomodasi-l">Akomodasi</a></li>
-                </ul>
-            </li>
-            <li><a href="create-travel-plan">TravelPlan</a></li>
-            <li><a href="dashboard">Home</a></li>
-            <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
-        </ul>
-    </div>
+    <?php include 'navbar.php'; ?>  
     <div class="adddestination">
         <h1>Edit Destination Menu</h1>
-        <div class="deletebutton">
-            <button type="submit" name="delete" id="delete"><a href="pilih-wisata">Delete</a></button>
-        </div>
-        <div class="uploadinfo">
-            <h2>Upload Foto:</h2>
-            <input type="file" name="upload" id="upload">
-            <label for="upload" id="uploadbutton">Upload</label>
-        </div>
-        <div class="placeinfo1">
-            <h2>Nama Tempat:</h2>
-            <input type="text" name="placename" id="placename" placeholder="Nama Tempat">
-            <h2>Lokasi:</h2>
-            <input type="text" name="location" id="location" placeholder="Lokasi">
-        </div>
-        <div class="placeinfo2">
-            <h2>Harga:</h2>
-            <input type="text" name="price" id="price">
-            <h2>Tipe:</h2>
-            <input type="text" name="type" id="type">
-            <h2>Jam Buka:</h2>
-            <input type="time" name="openhour" id="openhour">
-            <h2>Jam Tutup:</h2>
-            <input type="time" name="closehour" id="closehour">
-        </div>
-        <div class="placeinfo3">
-            <h2>Nomor Telepon:</h2>
-            <input type="text" name="contact" id="contact">
-            <h2>Email:</h2>
-            <input type="text" name="email" id="email">
-            <h2>Website:</h2>
-            <input type="text" name="website" id="website">
-        </div>
-        <div class="placeinfo4">
-            <h2>Deskripsi:</h2>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit" name="submit" id="submit">Submit</button>
+        <form action="pilih-wisata" method="POST" enctype="multipart/form-data">
+            <div class="deletebutton">
+                <button type="submit" name="delete" id="delete"><a href="pilih-wisata">Delete</a></button>
+            </div>
+            <div class="uploadinfo">
+                <h2>Upload Foto:</h2>
+                <input type="file" name="upload" id="upload">
+                <label for="upload" id="uploadbutton">Upload</label>
+            </div>
+            <div class="placeinfo1">
+                <h2>Nama Tempat:</h2>
+                <input type="text" name="placename" id="placename" placeholder="Nama Tempat">
+                <h2>Lokasi:</h2>
+                <input type="text" name="location" id="location" placeholder="Lokasi">
+            </div>
+            <div class="placeinfo2">
+                <h2>Harga:</h2>
+                <input type="text" name="price" id="price">
+                <h2>Tipe:</h2>
+                <input type="text" name="type" id="type">
+                <h2>Jam Buka:</h2>
+                <input type="time" name="openhour" id="openhour">
+                <h2>Jam Tutup:</h2>
+                <input type="time" name="closehour" id="closehour">
+            </div>
+            <div class="placeinfo3">
+                <h2>Nomor Telepon:</h2>
+                <input type="text" name="contact" id="contact">
+                <h2>Email:</h2>
+                <input type="text" name="email" id="email">
+                <h2>Website:</h2>
+                <input type="text" name="website" id="website">
+            </div>
+            <div class="placeinfo4">
+                <h2>Deskripsi:</h2>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </form>
     </div>
     <script src="../../public/js/editinfowisata.js"></script>
 </body>

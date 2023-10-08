@@ -23,7 +23,7 @@ services:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: travelution_database
     ports:
-      - 3306:3306
+      - 3300:3306
 networks:
   mynetwork:
     driver: bridge

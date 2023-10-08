@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $_SESSION['Role'] = "admin";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,43 +15,51 @@
     <title>Travelution</title>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#">Jason</a>
-                <ul class="profiledropdownadmin">
-                    <li><a href="profile">Profil</a></li>
-                    <li><a href="pilih-wisata">Edit Destination</a></li>
-                    <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
-                    <li><a id="logout">Logout</a></li>
-                    <script src="../../public/js/logout.js"></script>
-                </ul>
-            </li>
-            <li><a href="#">Menu</a>
-                <ul class="menudropdown">
-                    <li><a href="list-tempat-wisata-l">Tempat Wisata</a></li>
-                    <li><a href="list-akomodasi-l">Akomodasi</a></li>
-                </ul>
-            </li>
-            <li><a href="create-travel-plan">TravelPlan</a></li>
-            <li><a href="dashboard">Home</a></li>
-            <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
-        </ul>
-    </div>
+    <?php include 'navbar.php'; ?>  
     <div class="searchandsorted">
-        <h1>Cari Tempat:</h1>
+        <h1>Cari Akomodasi:</h1>
         <div class="search">
             <input type="text" placeholder="Search" id="search" name="search">
             <!-- <label for="search">Search</label> -->
         </div>
-        <div class="sorted">
-            <h1>Urutkan:</h1>
-            <select name="sorted" id="sorted">
-                <option value="Termurah">Termurah</option>
-                <option value="Termahal">Termahal</option>
-                <option value="Rating Tertinggi">Rating Tertinggi</option>
-                <option value="Banyak Komentar">Banyak Komentar</option>
-                <option value="Huruf A-Z">Huruf A-Z</option>
-            </select>
+        <div class="sortfill">
+            <div class="sorted">
+                <h1>Urutkan:</h1>
+                <select name="sorted" id="sorted">
+                    <option value="Termurah">Termurah</option>
+                    <option value="Termahal">Termahal</option>
+                    <option value="Rating Tertinggi">Rating Tertinggi</option>
+                    <option value="Banyak Komentar">Banyak Komentar</option>
+                    <option value="Huruf A-Z">Huruf A-Z</option>
+                </select>
+            </div>
+            <div class="filter1">
+                <h1>Filter Tipe:</h1>
+                <select name="filtertempat" id="filtertempat">
+                    <option value="Semua">Semua</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Resort">Resort</option>
+                    <option value="Apartemen">Apartemen</option>
+                    <option value="Homestay">Homestay</option>
+                    <option value="Guest House">Guest House</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="Cottage">Cottage</option>
+                </select>
+            </div>
+            <div class="filter2">
+                <h1>Filter Daerah:</h1>
+                <select name="filterdaerah" id="filterdaerah">
+                    <option value="Semua">Semua</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="buttonkonfirmasi">
@@ -145,7 +158,7 @@
             </a>
         </div>
     </div>
-    <script src="../../public/js/listtempatwisata.js"></script>
+    <script src="../../public/js/placeselection.js"></script>
     <script src="../../public/js/editinfo.js"></script>
     <script src="../../public/js/addtempatwisata.js"></script>
     <div class="pagination-page">
