@@ -29,37 +29,57 @@
                     <option value="Termurah">Termurah</option>
                     <option value="Termahal">Termahal</option>
                     <option value="Rating Tertinggi">Rating Tertinggi</option>
-                    <option value="Banyak Komentar">Banyak Komentar</option>
                     <option value="Huruf A-Z">Huruf A-Z</option>
                 </select>
             </div>
             <div class="filter1">
                 <h1>Filter Tipe:</h1>
-                <select name="filtertempat" id="filtertempat">
-                    <option value="Semua">Semua</option>
-                    <option value="Hotel">Hotel</option>
-                    <option value="Villa">Villa</option>
-                    <option value="Resort">Resort</option>
-                    <option value="Apartemen">Apartemen</option>
-                    <option value="Homestay">Homestay</option>
-                    <option value="Guest House">Guest House</option>
-                    <option value="Bungalow">Bungalow</option>
-                    <option value="Cottage">Cottage</option>
-                </select>
+                <div class="filter-type">
+                    <button id="toggle-dropdown1" class="dropdown-button">Pilih Tipe Tempat</button>
+                    <div class="dropdown-select" id="type-dropdown">
+                        <label for="semua"><input type="checkbox" id="semua" value="semua">Semua</label>
+                        <label for="pantai"><input type="checkbox" id="pantai" value="pantai">Pantai</label>
+                        <label for="gunung"><input type="checkbox" id="gunung" value="gunung">Gunung</label>
+                        <label for="perkemahan"><input type="checkbox" id="perkemahan" value="perkemahan">Perkemahan</label>
+                        <label for="taman"><input type="checkbox" id="taman" value="taman">Taman</label>
+                        <label for="museum"><input type="checkbox" id="museum" value="museum">Museum</label>
+                        <label for="kuliner"><input type="checkbox" id="kuliner" value="kuliner">Kuliner</label>
+                    </div>
+                </div>
+                <script>
+                    const toggleButton1 = document.getElementById("toggle-dropdown1");
+                    const dropdown1 = document.getElementById("type-dropdown");
+
+                    toggleButton1.addEventListener("click", function () {
+                        dropdown1.style.display = dropdown1.style.display === "block" ? "none" : "block";
+                    });
+                </script>
             </div>
             <div class="filter2">
                 <h1>Filter Daerah:</h1>
-                <select name="filterdaerah" id="filterdaerah">
-                    <option value="Semua">Semua</option>
-                    <option value="Bali">Bali</option>
-                    <option value="Banten">Banten</option>
-                    <option value="Jakarta">Jakarta</option>
-                    <option value="Jawa Barat">Jawa Barat</option>
-                    <option value="Jawa Tengah">Jawa Tengah</option>
-                    <option value="Yogyakarta">Yogyakarta</option>
-                    <option value="Jawa Timur">Jawa Timur</option>
-                </select>
+                <div class="filter-place">
+                    <button id="toggle-dropdown2" class="dropdown-button">Pilih Daerah</button>
+                    <div class="dropdown-select" id="place-dropdown">
+                        <label for="semua"><input type="checkbox" id="semua" value="semua">Semua</label>
+                        <label for="Bali"><input type="checkbox" id="Bali" value="Bali">Bali</label>
+                        <label for="Banten"><input type="checkbox" id="Banten" value="Banten">Banten</label>
+                        <label for="Jakarta"><input type="checkbox" id="Jakarta" value="Jakarta">Jakarta</label>
+                        <label for="Jawa Barat"><input type="checkbox" id="Jawa Barat" value="Jawa Barat">Jawa Barat</label>
+                        <label for="Jawa Tengah"><input type="checkbox" id="Jawa Tengah" value="Jawa Tengah">Jawa Tengah</label>
+                        <label for="Yogyakarta"><input type="checkbox" id="Yogyakarta" value="Yogyakarta">Yogyakarta</label>
+                        <label for="Jawa Timur"><input type="checkbox" id="Jawa Timur" value="Jawa Timur">Jawa Timur</label>
+                    </div>
+                </div>
+                <script>
+                    const toggleButton2 = document.getElementById("toggle-dropdown2");
+                    const dropdown2 = document.getElementById("place-dropdown");
+
+                    toggleButton2.addEventListener("click", function () {
+                        dropdown2.style.display = dropdown2.style.display === "block" ? "none" : "block";
+                    });
+                </script>
             </div>
+            <button type="submit" class="buttonfilter" id="buttonfilter">Apply Filter</button>
         </div>
     </div>
     <div class="buttonkonfirmasi">
