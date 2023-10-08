@@ -34,16 +34,25 @@
             </div>
             <div class="filter1">
                 <h1>Filter Tipe:</h1>
-                <select name="filtertempat" id="filtertempat">
-                    <option value="Semua">Semua</option>
-                    <option value="Pantai">Pantai</option>
-                    <option value="Gunung">Gunung</option>
-                    <option value="Taman Hiburan">Taman Hiburan</option>
-                    <option value="Air Terjun">Air Terjun</option>
-                    <option value="Kebun Binatang">Kebun Binatang</option>
-                    <option value="Kolam Renang">Kolam Renang</option>
-                    <option value="Ruang Terbuka Publik">Ruang Terbuka Publik</option>
-                </select>
+                <div class="custom-dropdown">
+                    <button id="toggle-dropdown" class="dropdown-button">Select Countries</button>
+                    <div class="dropdown-select" id="countries-dropdown">
+                        <label for="usa"><input type="checkbox" id="usa" value="usa"> United States</label>
+                        <label for="canada"><input type="checkbox" id="canada" value="canada"> Canada</label>
+                        <label for="uk"><input type="checkbox" id="uk" value="uk"> United Kingdom</label>
+                        <label for="australia"><input type="checkbox" id="australia" value="australia"> Australia</label>
+                        <label for="germany"><input type="checkbox" id="germany" value="germany"> Germany</label>
+                    </div>
+                </div>
+                
+                <script>
+                    const toggleButton = document.getElementById("toggle-dropdown");
+                    const dropdown = document.getElementById("countries-dropdown");
+
+                    toggleButton.addEventListener("click", function () {
+                        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                    });
+                </script>
             </div>
             <div class="filter2">
                 <h1>Filter Daerah:</h1>
