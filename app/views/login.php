@@ -16,7 +16,7 @@
         <input type="text" name="username" id="username" placeholder="Username">
         <h2>Password:</h2>
         <input type="password" name="password" id="password" placeholder="Password">
-        <p>Belum punya akun, <a href="signup.php">daftar dulu</a></p>
+        <p>Belum punya akun, <a href="signup">daftar dulu</a></p>
         <button type="submit" name="submit" id="submit" onclick="login(event)">Login</button>
     <!-- <div class="login">
         <h1>Login Menu</h1>

@@ -50,6 +50,17 @@ display: none;
   display: none;
 }
 
+.navbar ul li ul.historydropdown li{
+  display: block;
+}
+
+.navbar ul li ul.historydropdown{
+  width: 200px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
 .navbar li {
   font-family: 'Montserrat', sans-serif;
   float: right;
@@ -98,6 +109,13 @@ margin-left: -161px;
   margin-top: -1px;
   margin-left: -140px;
 }
+
+.navbar li:hover ul.historydropdown{
+  display: block;
+  margin-top: -1px;
+  margin-left: -140px;
+}
+
 .adddestination {
   width: 90%;
   height: 80%;

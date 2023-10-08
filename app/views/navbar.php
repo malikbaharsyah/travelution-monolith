@@ -18,6 +18,12 @@
                         <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
+                <li><a href="#">History</a>
+                    <ul class="historydropdown">
+                        <li><a href="history-ongoing">Ongoing</a></li>
+                        <li><a href="history-done">Done</a></li>
+                    </ul>
+                </li>
                 <li><a href="create-travel-plan">TravelPlan</a></li>
                 <li><a href="dashboard">Home</a></li>
                 <li><img src="../../public/package/logo2.png" alt="Travelution Logo"></li>
@@ -37,6 +43,12 @@
                     <ul class="menudropdown">
                         <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
                         <li><a href="list-akomodasi">Akomodasi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">History</a>
+                    <ul class="historydropdown">
+                        <li><a href="history-ongoing">Ongoing</a></li>
+                        <li><a href="history-done">Done</a></li>
                     </ul>
                 </li>
                 <li><a href="create-travel-plan">TravelPlan</a></li>
