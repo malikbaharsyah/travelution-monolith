@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/listplace.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
@@ -57,135 +62,136 @@
             </div>
         </div>
     </div>
-    <div class="listdestination" id="destinationContainer">
-        <!-- <div class="destinationbox">
-            <a href="info-place-nl">
+    <div class="buttonkonfirmasi">
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><?php if (isset($_SESSION['Username'])) echo '<a href="konfirmasi-travel-plan">'; else echo '<a href="login">'?>Konfirmasi Pemesanan</a></button>
+    </div>
+    <div class="listdestination">
+        <div class="destinationbox">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
-            <h2>Tempat AB</h2>
-            <h3>Bogor, Indonesia</h3>
+            <h2 id="namatempat">Tempat AAA</h2>
+            <h3 id="lokasitempat">Jawa Barat</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Tempat A</h2>
-            <h3>Bogor, Indonesia</h3>
+            <h3>Jawa Tengah</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Rail Haze</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Brows</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Umbrowk</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Stravel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
         </div>
         <div class="destinationbox">
-            <a href="info-place-nl">
+            <a href="info-place-l">
             <img src="../../public/package/purpletravel.jpg" alt="destination1">
             <h2>Purple Travel</h2>
             <h3>Bogor, Indonesia</h3>
             </a>
-        </div> -->
-        <script src="../../public/js/loadwisata.js"></script>
-
+        </div>
     </div>
     <script src="../../public/js/placeselection.js"></script>
     <div class="pagination-page">

@@ -17,8 +17,8 @@ function executeSQL($sql, $params = array()) {
             $stmt->bindParam($paramName, $paramValue);
         }
 
-        $stmt->execute();
         // $stmt->debugDumpParams();
+        $stmt->execute();
         return $stmt;
 
     }

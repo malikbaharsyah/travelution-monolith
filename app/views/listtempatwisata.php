@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['Role'] = "admin";
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/listplace.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
+    <script src="../../public/js/infowisataconf.js"></script>
     <title>Travelution</title>
 </head>
 <body>
@@ -30,7 +29,6 @@
                     <option value="Termurah">Termurah</option>
                     <option value="Termahal">Termahal</option>
                     <option value="Rating Tertinggi">Rating Tertinggi</option>
-                    <option value="Banyak Komentar">Banyak Komentar</option>
                     <option value="Huruf A-Z">Huruf A-Z</option>
                 </select>
             </div>
@@ -38,14 +36,13 @@
                 <h1>Filter Tipe:</h1>
                 <select name="filtertempat" id="filtertempat">
                     <option value="Semua">Semua</option>
-                    <option value="Hotel">Hotel</option>
-                    <option value="Villa">Villa</option>
-                    <option value="Resort">Resort</option>
-                    <option value="Apartemen">Apartemen</option>
-                    <option value="Homestay">Homestay</option>
-                    <option value="Guest House">Guest House</option>
-                    <option value="Bungalow">Bungalow</option>
-                    <option value="Cottage">Cottage</option>
+                    <option value="Pantai">Pantai</option>
+                    <option value="Gunung">Gunung</option>
+                    <option value="Taman Hiburan">Taman Hiburan</option>
+                    <option value="Air Terjun">Air Terjun</option>
+                    <option value="Kebun Binatang">Kebun Binatang</option>
+                    <option value="Kolam Renang">Kolam Renang</option>
+                    <option value="Ruang Terbuka Publik">Ruang Terbuka Publik</option>
                 </select>
             </div>
             <div class="filter2">
@@ -64,7 +61,7 @@
         </div>
     </div>
     <div class="buttonkonfirmasi">
-        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><a href="konfirmasi-travel-plan">Konfirmasi Pemesanan</a></button>
+        <button type="submit" class="konfirmasi" id="buttonkonfirmasi"><?php if (isset($_SESSION['Username'])) echo '<a href="konfirmasi-travel-plan">'; else echo '<a href="login">'?>Konfirmasi Pemesanan</a></button>
     </div>
     <div class="listdestination">
         <div class="destinationbox">

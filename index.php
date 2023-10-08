@@ -1,3 +1,3 @@
 <script>
-    window.location.href = "app/views/landingpage.php";        
+    window.location.href = "/dashboard";        
 </script>

@@ -1,9 +1,9 @@
-<?php 
+<?php
     if(isset($_SESSION['Role'])){
         if ($_SESSION['Role'] == 'admin'){
             echo '<div class="navbar">
             <ul>
-                <li><a href="#">Jason</a>
+                <li><a href="#">' . $_SESSION["Username"] . '</a>
                     <ul class="profiledropdownadmin">
                         <li><a href="profile">Profil</a></li>
                         <li><a href="pilih-wisata">Edit Destination</a></li>
@@ -14,8 +14,8 @@
                 </li>
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
-                        <li><a href="list-tempat-wisata-l">Tempat Wisata</a></li>
-                        <li><a href="list-akomodasi-l">Akomodasi</a></li>
+                        <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                        <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
                 <li><a href="create-travel-plan">TravelPlan</a></li>
@@ -26,7 +26,7 @@
         } else {
             echo '<div class="navbar">
             <ul>
-                <li><a href="#">Jason</a>
+                <li><a href="#">' . $_SESSION["Username"] . '</a>
                     <ul class="profiledropdownadmin">
                         <li><a href="profile">Profil</a></li>
                         <li><a id="logout">Logout</a></li>
@@ -35,8 +35,8 @@
                 </li>
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
-                        <li><a href="list-tempat-wisata-l">Tempat Wisata</a></li>
-                        <li><a href="list-akomodasi-l">Akomodasi</a></li>
+                        <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                        <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
                 <li><a href="create-travel-plan">TravelPlan</a></li>
@@ -52,8 +52,8 @@
             <li><a href="signup">Sign Up</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="list-tempat-wisata-nl">Tempat Wisata</a></li>
-                    <li><a href="list-akomodasi-nl">Akomodasi</a></li>
+                    <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                    <li><a href="list-akomodasi">Akomodasi</a></li>
                 </ul>
             </li>
             <li><a href="#" id="homeLink">Home</a></li>
