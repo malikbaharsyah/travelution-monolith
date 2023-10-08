@@ -6,6 +6,8 @@ RewriteRule ^create-travel-plan$ /app/views/createtravelplan.php
 RewriteRule ^dashboard$ /app/views/dashboard.php
 RewriteRule ^edit-accomodation$ /app/views/editaccomodation.php
 RewriteRule ^edit-destination$ /app/views/editdestination.php
+RewriteRule ^history-done$ /app/views/historytravelplan(done).php
+RewriteRule ^history-ongoing$ /app/views/historytravelplan(ongoing).php
 RewriteRule ^info-place$ /app/views/infoplace.php
 RewriteRule ^konfirmasi-pesanan$ /app/views/konfirmasipesanan.php
 RewriteRule ^konfirmasi-travel-plan$ /app/views/konfirmasitravelplan.php
