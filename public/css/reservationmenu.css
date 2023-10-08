@@ -5,99 +5,116 @@ body{
 }
 
 .navbar{
-    position: relative;
-    z-index: 100000;
-  }
-  
-  .navbar ul {
-    width: auto;
-    list-style-type: none;
-    margin-left: -8px;
-    margin-top: -8px;
-    overflow: hidden;
-    background-color: rgb(99, 0, 108);
-  }
-  
-  .navbar ul li ul.profiledropdown li{
-    display: block;
-  }
-  
-  .navbar ul li ul.profiledropdown{
-    position: absolute;
-    z-index: 999;
-    display: none;
-  }
-  
-  .navbar ul li ul.profiledropdownadmin li{
+  position: relative;
+  z-index: 100000;
+}
+
+.navbar ul {
+  width: auto;
+  list-style-type: none;
+  margin-left: -8px;
+  margin-top: -8px;
+  overflow: hidden;
+  background-color: rgb(99, 0, 108);
+}
+
+.navbar ul li ul.profiledropdown li{
   display: block;
-  }
-  
-  .navbar ul li ul.profiledropdownadmin{
-  width: 220px;
+}
+
+.navbar ul li ul.profiledropdown{
   position: absolute;
   z-index: 999;
   display: none;
-  }
-  
-  .navbar ul li ul.menudropdown li{
-    display: block;
-  }
-  
-  .navbar ul li ul.menudropdown{
-    width: 200px;
-    position: absolute;
-    z-index: 999;
-    display: none;
-  }
-  
-  .navbar li {
-    font-family: 'Montserrat', sans-serif;
-    float: right;
-  }
-  
-  .navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 22px 26px;
-    text-decoration: none;
-  }
-  
-  .navbar li img {
-    width: 95px;
-    height: 40px;
-    display: block;
-    margin-left: 5px;
-    margin-top: 10px;
-    position: absolute;
-    left: 0;
-  }
-  
-  .navbar li a:hover {
-    background-color: #111;
-  }
-  
-  .navbar li:hover ul.menudropdown{
-    display: block;
-  }
-  
-  .navbar li:hover ul.profiledropdown{
-    display: block;
-    margin-top: -1px;
-    margin-left: -140px;
-  }
-  
-  .navbar li:hover ul.profiledropdownadmin{
+}
+
+.navbar ul li ul.profiledropdownadmin li{
+display: block;
+}
+
+.navbar ul li ul.profiledropdownadmin{
+width: 220px;
+position: absolute;
+z-index: 999;
+display: none;
+}
+
+.navbar ul li ul.menudropdown li{
+  display: block;
+}
+
+.navbar ul li ul.menudropdown{
+  width: 200px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.navbar ul li ul.historydropdown li{
+  display: block;
+}
+
+.navbar ul li ul.historydropdown{
+  width: 200px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.navbar li {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 26px;
+  text-decoration: none;
+}
+
+.navbar li img {
+  width: 95px;
+  height: 40px;
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.navbar li:hover ul.menudropdown{
+  display: block;
+}
+
+.navbar li:hover ul.profiledropdown{
   display: block;
   margin-top: -1px;
-  margin-left: -161px;
-  }
-  
-  .navbar li:hover ul.menudropdown{
-    display: block;
-    margin-top: -1px;
-    margin-left: -140px;
-  }
+  margin-left: -140px;
+}
+
+.navbar li:hover ul.profiledropdownadmin{
+display: block;
+margin-top: -1px;
+margin-left: -161px;
+}
+
+.navbar li:hover ul.menudropdown{
+  display: block;
+  margin-top: -1px;
+  margin-left: -140px;
+}
+
+.navbar li:hover ul.historydropdown{
+  display: block;
+  margin-top: -1px;
+  margin-left: -140px;
+}
 
 .reservasimenu {
     width: 30%;
