@@ -6,7 +6,7 @@ const getLocation = async (e) => {
     const lib = new Lib();
     const res = await lib.get('/api/get-places-location', formData);
     const jsonRes = JSON.parse(res);
-    console.log(jsonRes["message"])
+    // console.log(jsonRes["message"])
     
     var locDropDown = document.getElementById("location-dropdown");
     

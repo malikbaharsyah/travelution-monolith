@@ -6,7 +6,7 @@
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
                     <ul class="profiledropdownadmin">
                         <li><a href="profile">Profil</a></li>
-                        <li><a href="edit-place">Edit Destination</a></li>
+                        <li><a href="edit-place?page=1">Edit Destination</a></li>
                         <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
                         <li><a id="logout">Logout</a></li>
                         <script src="../../public/js/logout.js"></script>
@@ -14,7 +14,7 @@
                 </li>
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
-                        <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                        <li><a href="list-tempat-wisata?page=1">Tempat Wisata</a></li>
                         <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
@@ -42,7 +42,7 @@
                 </li>
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
-                        <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                        <li><a href="list-tempat-wisata?page=1">Tempat Wisata</a></li>
                         <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
@@ -65,7 +65,7 @@
             <li><a href="signup">Sign Up</a></li>
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
-                    <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
+                    <li><a href="list-tempat-wisata?page=1">Tempat Wisata</a></li>
                     <li><a href="list-akomodasi">Akomodasi</a></li>
                 </ul>
             </li>

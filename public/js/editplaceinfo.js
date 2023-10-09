@@ -48,6 +48,6 @@ document.getElementById("submit").addEventListener("click", function () {
             localStorage.setItem("placename", newPlacename || storedPlacename);
             localStorage.setItem("location", newLocation || storedPlacelocation);
         }
-        window.location.href = "edit-place";
+        window.location.href = "edit-place?page=1";
     }
 });

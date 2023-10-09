@@ -216,7 +216,6 @@
     <script src="../../public/js/placeselection.js"></script>
     <div class="pagination-page">
         <ul id="pagination-list">
-            <a href="#">&laquo;</a>
         </ul>
     </div>    
     <script src="../../public/js/pagination.js"></script>

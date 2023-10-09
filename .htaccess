@@ -25,8 +25,9 @@ RewriteRule ^api/login$ src/loginServerSide.php
 RewriteRule ^api/logout$ src/logoutServerSide.php
 RewriteRule ^api/signup$ src/signupServerSide.php
 RewriteRule ^api/filterPlaces$ src/filterPlaceServerSide.php
-RewriteRule ^api/get-places-location$ src/getLocationServerside.php
-RewriteRule ^api/get-places-category$ src/getCategoryServerside.php
+RewriteRule ^api/get-places-location$ src/getLocationServerSide.php
+RewriteRule ^api/get-places-category$ src/getCategoryServerSide.php
+RewriteRule ^api/get-places-count$ src/getPlaceCountServerSide.php
 RewriteRule ^api/get-place-info$ src/getPlaceInfo.php
 RewriteRule ^api/add-destination$ src/addDestinationController.php
 

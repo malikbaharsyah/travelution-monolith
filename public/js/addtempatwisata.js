@@ -33,7 +33,7 @@ const uploadDestination = async (e) => {
 
         if (response.ok) {
             const jsonRes = await response.json();
-            console.log(jsonRes);
+            // console.log(jsonRes);
         } else {
             console.error('Error:', response.status, response.statusText);
         }
