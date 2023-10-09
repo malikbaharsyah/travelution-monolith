@@ -16,10 +16,10 @@
 <body>
     <?php include 'navbar.php'; ?>  
     <div class="adddestination">
-        <h1>Edit Destination Menu</h1>
-        <form action="pilih-wisata" method="POST" enctype="multipart/form-data">
+        <h1 id="destination-name"></h1>
+        <form action="edit-place" method="POST" enctype="multipart/form-data">
             <div class="deletebutton">
-                <button type="submit" name="delete" id="delete"><a href="pilih-wisata">Delete</a></button>
+                <button type="submit" name="delete" id="delete"><a href="edit-place">Delete</a></button>
             </div>
             <div class="uploadinfo">
                 <h2>Upload Foto:</h2>
@@ -28,35 +28,36 @@
             </div>
             <div class="placeinfo1">
                 <h2>Nama Tempat:</h2>
-                <input type="text" name="placename" id="placename" placeholder="Nama Tempat">
+                <input type="text" name="placename" id="placename" placeholder="">
                 <h2>Lokasi:</h2>
-                <input type="text" name="location" id="location" placeholder="Lokasi">
+                <input type="text" name="location" id="location" placeholder="">
             </div>
             <div class="placeinfo2">
                 <h2>Harga:</h2>
-                <input type="text" name="price" id="price">
+                <input type="text" name="price" id="price" placeholder="">
                 <h2>Tipe:</h2>
-                <input type="text" name="type" id="type">
+                <input type="text" name="type" id="type" placeholder="">
                 <h2>Jam Buka:</h2>
-                <input type="time" name="openhour" id="openhour">
+                <input type="time" name="openhour" id="openhour" placeholder="">
                 <h2>Jam Tutup:</h2>
-                <input type="time" name="closehour" id="closehour">
+                <input type="time" name="closehour" id="closehour" placeholder="">
             </div>
             <div class="placeinfo3">
                 <h2>Nomor Telepon:</h2>
-                <input type="text" name="contact" id="contact">
+                <input type="text" name="contact" id="contact" placeholder="">
                 <h2>Email:</h2>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" placeholder="">
                 <h2>Website:</h2>
-                <input type="text" name="website" id="website">
+                <input type="text" name="website" id="website" placeholder="">
             </div>
             <div class="placeinfo4">
                 <h2>Deskripsi:</h2>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder=""></textarea>
             </div>
             <button type="submit" name="submit" id="submit">Submit</button>
         </form>
     </div>
-    <script src="../../public/js/editinfowisata.js"></script>
+    <script src="../../public/js/httprequest.js"></script>
+    <script src="../../public/js/editplaceinfo.js"></script>
 </body>
 </html>
