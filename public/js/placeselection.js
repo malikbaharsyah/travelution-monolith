@@ -79,10 +79,35 @@ document.addEventListener("DOMContentLoaded" , async () => {
     
             var newLink = document.createElement("a");
             newLink.href = "/info-place?placeid="+place["PlaceID"]; 
-    
             var newImage = document.createElement("img");
-            newImage.src = "../../public/package/purpletravel.jpg";
-            newImage.alt = "destination1";
+            
+            fetch('/api/get-place-image', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    PlaceId: place["PlaceID"],
+                }),
+            })
+            .then(response => {
+                console.log(response);
+                if (response.ok) {
+                    return response.blob();
+                } else {
+                    throw new Error('Profile picture not found.');
+                }
+            })
+            .then(blob => {
+                const imageUrl = URL.createObjectURL(blob);
+                console.log("TESS" + imageUrl);
+                newImage.src = imageUrl;
+                newImage.alt = "destination1";
+            })
+            .catch(error => {
+                console.error('error getting profile image:', error);
+            });
+
     
             var newH2 = document.createElement("h2");
             newH2.textContent = place["PlaceName"];
