@@ -30,10 +30,15 @@ RewriteRule ^api/get-places-category$ src/getCategoryServerSide.php
 RewriteRule ^api/get-places-count$ src/getPlaceCountServerSide.php
 RewriteRule ^api/get-place-info$ src/getPlaceInfo.php
 RewriteRule ^api/add-destination$ src/addDestinationController.php
+RewriteRule ^api/profile/img$ src/profileImgController.php
 
 RewriteCond %{REQUEST_METHOD} ^GET$
 RewriteRule ^api/profile$ src/profileController.php
+RewriteRule ^api/profile/img$ src/profileImgController.php
 
 RewriteCond %{REQUEST_METHOD} ^PUT$
+RewriteRule ^api/login$ src/profileController.php
+RewriteRule ^api/profile/img$ src/profileImgController.php
 
 RewriteCond %{REQUEST_METHOD} ^DELETE$
+RewriteRule ^api/profile/img$ src/profileImgController.php

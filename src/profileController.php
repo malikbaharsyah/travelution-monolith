@@ -2,7 +2,7 @@
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (!isset($_SESSION["Username"])) {
-        $res = ['message' => $_SESSION];
+        $res = ['message' => 'Access denied'];
         echo json_encode($res);
     } else {
         $host = "172.21.0.3";
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             // Set PDO to throw exceptions on errors
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $username = $_SESSION["Username"];
-            // Example query
+
             $sql = "SELECT Username, FirstName, LastName, Email, PhoneNumber FROM Account WHERE Username = '$username'"; // Change this to your table name
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
@@ -33,7 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             echo json_encode($res);
         } 
     }
-} else {
+} 
+
+else {
     $res = ['message' => 'Access denied'];
     echo json_encode($res);
 }
