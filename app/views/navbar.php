@@ -1,6 +1,6 @@
 <?php
     if(isset($_SESSION['Role'])){
-        if ($_SESSION['Role'] == 'admin'){
+        if ($_SESSION['Role'] == 'Admin'){
             echo '<div class="navbar">
             <ul>
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
