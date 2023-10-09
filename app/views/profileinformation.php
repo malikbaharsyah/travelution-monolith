@@ -23,7 +23,7 @@
             <label for="profile-picture-input" id="profile-picture-upload">Change Photo</label>
             <label id="profile-picture-delete">Delete Photo</label>
         </div>
-        <script src="../../public/js/profileuploadphoto.js"></script>
+        <!-- <script src="../../public/js/profileuploadphoto.js"></script> -->
         <div class="verticalline"></div>
         <div class="user-info">
             <h2>Information:</h2>
@@ -37,6 +37,10 @@
         </div>
         <button class="editprofile"><a href="change-information">Change Information</a></button>
     </div>
-    <script src="../../public/js/changeinformation.js"></script>
+    <script src="../../public/js/profileinfo.js"></script>
+    <script src="../../public/js/httprequest.js"></script>
+    <script>
+        var username = "<?php echo isset($_SESSION['Username']) ? $_SESSION['Username'] : ''; ?>";
+    </script>
 </body>
 </html>
