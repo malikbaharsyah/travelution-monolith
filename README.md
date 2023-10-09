@@ -66,18 +66,20 @@ Profile Menu & Change Information User
 ![ss](screenshoot/Screenshot 2023-10-07 221145.png)
 ![ss](screenshoot/Screenshot 2023-10-07 221152.png)
 
-Membuat Travel Plan
+List Destinasi & Akomodasi (With Pagination)
+![ss](screenshoot/Screenshot 2023-10-09 135454.png)
+![ss](screenshoot/Screenshot 2023-10-09 140459.png)
 
-List Destinasi & Akomodasi
+
+Pagination
+
+![ss](screenshoot/Screenshot 2023-10-09 140009.png)
 
 CRUD Destinasi & Akomodasi
 
 ![ss](screenshoot/Screenshot 2023-10-07 221255.png)
 ![ss](screenshoot/Screenshot 2023-10-07 221320.png)
 
-Reservasi Travel Plan
-
-Konfirmasi Pemesanan Menu
 
 # Pembagian Tugas
 <b>Frontend / Client-side</b>
