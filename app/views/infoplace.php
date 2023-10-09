@@ -22,24 +22,24 @@
         <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
     </div>
     <div class="destination-info">
-        <h1 id="infonamatempat">Tempat AAB</h1>
-        <h2 id="infolokasitempat">Bandung, Indonesia</h2>
+        <h1 id="placename"></h1>
+        <h2 id="location"></h2>
         <h3>Informasi:</h3>
-        <p>Harga: Rp. 100.000</p>
-        <p>Waktu Operasional: 08.00 - 17.00</p>
-        <p>Rating: 9/10</p>
+        <p id="price">Harga: Rp. </p>
+        <p id="workhour">Waktu Operasional: </p>
+        <p id="type">Kategori: </p>
         <h3>Deskripsi:</h3>
-        <p>Tempat A adalah tempat wisata yang berada di Bandung, Indonesia. Tempat ini memiliki pemandangan yang indah dan cocok untuk berlibur bersama keluarga.
-           Tempat ini memiliki fasilitas yang lengkap, seperti toilet, mushola, dan tempat makan. Tempat ini juga memiliki fasilitas yang ramah untuk penyandang disabilitas.
-           Beragam jenis makanan dan minuman juga tersedia di tempat ini. Tempat ini juga memiliki fasilitas yang ramah untuk penyandang disabilitas.
-           Berdasarkan rating dari pengunjung, tempat ini memiliki rating 9/10. Tempat ini juga memiliki fasilitas yang ramah untuk penyandang disabilitas.
-           Oleh karena itu, tempat ini sangat cocok untuk dikunjungi bersama keluarga.</p>
+        <p id="description"></p>
         <h3>Kontak:</h3>
-        <p>Telepon: 08123456789</p>
+        <p id="contact">Telepon: </p>
+        <p id="email">Email: </p>
+        <p id="website">Website: </p>
     </div>
     <div class="button-menu">
         <button class="button custom-button" id="reservasi"><?php if (isset($_SESSION['Username'])) echo '<a href="select-travel-plan">'; else echo '<a href="login">'?>Reservasi</a></button>
         <!-- <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button> -->
-    </div>    
+    </div>
+    <script src="../../public/js/httprequest.js"></script>
+    <script src="../../public/js/placeinfo.js"></script> 
 </body>
 </html>

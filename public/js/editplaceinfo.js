@@ -30,7 +30,7 @@ window.onload = async () => {
     contact.placeholder = placeData[0]["PlaceContact"];
     email.placeholder = placeData[0]["PlaceEmail"];
     website.placeholder = placeData[0]["PlaceWebsite"];
-    description.placeholder = placeData[0]["PlaceDesctription"];
+    description.placeholder = placeData[0]["PlaceDescription"];
 
 };
 
