@@ -58,6 +58,6 @@
         </form>
     </div>
     <script src="../../public/js/httprequest.js"></script>
-    <script src="../../public/js/editplaceinfo.js"></script>
+    <script src="../../public/js/editplaceinfoo.js"></script>
 </body>
 </html>

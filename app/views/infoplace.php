@@ -17,9 +17,7 @@
 <body>
     <?php include 'navbar.php'; ?>
     <div class="destination-picture">
-        <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
-        <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
-        <img src="../../public/package/purpletravel.jpg" alt="Destination Picture" class="destination-picture">
+        <img id="image" src="" alt="Destination Picture" class="destination-picture">
     </div>
     <div class="destination-info">
         <h1 id="placename"></h1>
@@ -40,6 +38,6 @@
         <!-- <button class="button custom-button" id="Review"><a href="reviewmenu.php">Review</a></button> -->
     </div>
     <script src="../../public/js/httprequest.js"></script>
-    <script src="../../public/js/placeinfo.js"></script> 
+    <script src="../../public/js/placeinfoo.js"></script> 
 </body>
 </html>
