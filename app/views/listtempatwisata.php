@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../public/css/listplace.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <!-- <script src="../../public/js/infowisataconf.js"></script> -->
     <title>Travelution</title>
 </head>
 <body>
@@ -20,7 +19,6 @@
         <h1>Cari Akomodasi:</h1>
         <div class="search">
             <input type="text" placeholder="Search" id="search" name="search">
-            <!-- <label for="search">Search</label> -->
         </div>
         <div class="sortfill">
             <div class="sorted">
@@ -36,11 +34,10 @@
                 <h1>Filter Tipe:</h1>
                 <div class="filter-type">
                     <button id="toggle-dropdown1" class="dropdown-button" onclick="getCategory(event)">Pilih Tipe Tempat</button>
-                    <div class="dropdown-select" id="type-dropdown">
+                    <div id="category-dropdown" class="dropdown-select" >
                         <script src="../../public/js/getCategory.js"></script> 
                     </div>
                 </div>
-                <script src="../../public/js/placeselection.js"></script>
             </div>
             <div class="filter2">
                 <h1>Filter Daerah:</h1>
@@ -50,7 +47,6 @@
                         <script src="../../public/js/getLocation.js"></script>
                     </div>
                 </div>
-                <script src="../../public/js/placeselection.js"></script>
             </div>
             <button type="submit" class="buttonfilter" id="buttonfilter" >Apply Filter</button>
             <script src="../../public/js/httprequest.js"></script>
@@ -63,7 +59,6 @@
     <div class="listdestination" id="destinationContainer">
         
     </div>
-    <script src="../../public/js/placeselection.js"></script>
     <div class="pagination-page">
         <ul id="pagination-list">
             <a href="#">&laquo;</a>

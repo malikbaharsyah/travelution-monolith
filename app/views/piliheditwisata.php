@@ -35,7 +35,7 @@
                 <h1>Filter Tipe:</h1>
                 <div class="filter-type">
                 <button id="toggle-dropdown1" class="dropdown-button" onclick="getCategory(event)">Pilih Tipe Tempat</button>
-                    <div class="dropdown-select" id="type-dropdown">
+                    <div class="dropdown-select" id="category-dropdown">
                         <script src="../../public/js/getCategory.js"></script> 
                     </div>
                 </div>

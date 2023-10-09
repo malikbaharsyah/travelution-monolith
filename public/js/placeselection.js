@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
     const searchInput = document.getElementById("search");
     const sortedSelect = document.getElementById("sorted");
     const toggleButton1 = document.getElementById("toggle-dropdown1");
-    const dropdown1 = document.getElementById("type-dropdown");
+    const dropdown1 = document.getElementById("category-dropdown");
     const toggleButton2 = document.getElementById("toggle-dropdown2");
     const dropdown2 = document.getElementById("location-dropdown");
     const filterButton = document.getElementById("buttonfilter");
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
         e.preventDefault();
     
         function getTypeFilter() {
-            const checkboxes = document.querySelectorAll('#type-dropdown input[type="checkbox"]:checked');
+            const checkboxes = document.querySelectorAll('#category-dropdown input[type="checkbox"]:checked');
             const selectedValues = Array.from(checkboxes).map(checkbox => checkbox.value);
             return selectedValues;
         }
@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
 
     toggleButton1.addEventListener("click", function () {
         dropdown1.style.display = dropdown1.style.display === "block" ? "none" : "block";
+        console.log(dropdown1.style.display);
     });
     
     toggleButton2.addEventListener("click", function () {

@@ -1,21 +1,20 @@
 const getCategory = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
-
     const lib = new Lib();
-    const res = await lib.get('/api/get-places-category', formData);
+    const res = await lib.get('/api/get-places-category');
     const jsonRes = JSON.parse(res);
-    // console.log(jsonRes["message"])
-
-    var catDropDown = document.getElementById("type-dropdown");
+    
+    var catDropDown = document.getElementById("category-dropdown");
     
     if(catDropDown.firstChild != null)
+    {
         while (catDropDown.firstChild) {
             catDropDown.removeChild(catDropDown.firstChild);
         }
+    }
+    (jsonRes["message"]).forEach(cat => {
 
-    jsonRes["message"].forEach(cat => {
         const label = document.createElement('label');
 
         const input = document.createElement('input');
@@ -26,9 +25,10 @@ const getCategory = async (e) => {
 
         label.textContent = cat["PlaceType"];
         label.style.display = 'flex';
-        label.style.alignItems = 'center'; // Vertically center align the checkbox and text
-        input.style.order = '-1'; // Move the checkbox to the left
+        label.style.alignItems = 'center';
+        input.style.order = '-1';
         label.appendChild(input);
-        catDropDown.appendChild(label); 
+        catDropDown.appendChild(label);
     });
+
 }
