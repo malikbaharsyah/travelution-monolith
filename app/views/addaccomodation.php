@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['Role'] = "admin";
 ?>
 
 <!DOCTYPE html>

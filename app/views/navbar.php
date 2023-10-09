@@ -33,7 +33,8 @@
             echo '<div class="navbar">
             <ul>
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
-                    <ul class="profiledropdownadmin">
+                    <ul class="profiledr
+                     opdownadmin">
                         <li><a href="profile">Profil</a></li>
                         <li><a id="logout">Logout</a></li>
                         <script src="../../public/js/logout.js"></script>
