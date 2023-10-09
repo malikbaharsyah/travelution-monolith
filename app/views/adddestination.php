@@ -50,7 +50,7 @@
             <h2>Deskripsi:</h2>
             <textarea name="description" id="description" cols="30" rows="10"></textarea>
         </div>
-        <button type="submit" name="submit" id="submit"><a href="pilih-wisata">Submit</a></button>
+        <button type="submit" name="submit" id="submit" onclick="uploadDestination(event)"><a href="pilih-wisata">Submit</a></button>
     </div>
     <script src="../../public/js/addtempatwisata.js"></script>
 </body>
