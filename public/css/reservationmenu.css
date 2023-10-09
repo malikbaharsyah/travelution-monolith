@@ -29,14 +29,14 @@ body{
 }
 
 .navbar ul li ul.profiledropdownadmin li{
-display: block;
+  display: block;
 }
 
 .navbar ul li ul.profiledropdownadmin{
-width: 220px;
-position: absolute;
-z-index: 999;
-display: none;
+  width: 185px;
+  position: absolute;
+  z-index: 999;
+  display: none;
 }
 
 .navbar ul li ul.menudropdown li{
@@ -75,7 +75,7 @@ display: none;
 }
 
 .navbar li img {
-  width: 95px;
+  width: 140px;
   height: 40px;
   display: block;
   margin-left: 5px;
@@ -99,9 +99,10 @@ display: none;
 }
 
 .navbar li:hover ul.profiledropdownadmin{
-display: block;
-margin-top: -1px;
-margin-left: -161px;
+  display: block;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
 }
 
 .navbar li:hover ul.menudropdown{
@@ -113,7 +114,7 @@ margin-left: -161px;
 .navbar li:hover ul.historydropdown{
   display: block;
   margin-top: -1px;
-  margin-left: -140px;
+  margin-left: -130px;
 }
 
 .reservasimenu {

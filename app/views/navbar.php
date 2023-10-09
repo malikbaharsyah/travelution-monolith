@@ -5,9 +5,8 @@
             <ul>
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
                     <ul class="profiledropdownadmin">
-                        <li><a href="profile">Profil</a></li>
+                        <li><a href="profile">User Profile</a></li>
                         <li><a href="pilih-wisata">Edit Destination</a></li>
-                        <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
                         <li><a id="logout">Logout</a></li>
                         <script src="../../public/js/logout.js"></script>
                     </ul>
@@ -15,7 +14,6 @@
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
                         <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
-                        <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
                 <li><a href="#">History</a>
@@ -33,9 +31,8 @@
             echo '<div class="navbar">
             <ul>
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
-                    <ul class="profiledr
-                     opdownadmin">
-                        <li><a href="profile">Profil</a></li>
+                    <ul class="profiledropdownadmin">
+                        <li><a href="profile">User Profile</a></li>
                         <li><a id="logout">Logout</a></li>
                         <script src="../../public/js/logout.js"></script>
                     </ul>
@@ -43,7 +40,6 @@
                 <li><a href="#">Menu</a>
                     <ul class="menudropdown">
                         <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
-                        <li><a href="list-akomodasi">Akomodasi</a></li>
                     </ul>
                 </li>
                 <li><a href="#">History</a>
@@ -66,7 +62,6 @@
             <li><a href="#">Menu</a>
                 <ul class="menudropdown">
                     <li><a href="list-tempat-wisata">Tempat Wisata</a></li>
-                    <li><a href="list-akomodasi">Akomodasi</a></li>
                 </ul>
             </li>
             <li><a href="#" id="homeLink">Home</a></li>
