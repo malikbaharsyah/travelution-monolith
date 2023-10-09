@@ -4,8 +4,7 @@ RewriteRule ^add-destination$ /app/views/adddestination.php
 RewriteRule ^change-information$ /app/views/changeinformation.php
 RewriteRule ^create-travel-plan$ /app/views/createtravelplan.php
 RewriteRule ^dashboard$ /app/views/dashboard.php
-RewriteRule ^edit-accomodation$ /app/views/editaccomodation.php
-RewriteRule ^edit-destination$ /app/views/editdestination.php
+RewriteRule ^edit-place-info$ /app/views/editplaceinfo.php
 RewriteRule ^history-done$ /app/views/historytravelplan(done).php
 RewriteRule ^history-ongoing$ /app/views/historytravelplan(ongoing).php
 RewriteRule ^info-place$ /app/views/infoplace.php
@@ -15,8 +14,7 @@ RewriteRule ^$ /app/views/dashboard.php
 RewriteRule ^list-akomodasi$ /app/views/listakomodasi.php
 RewriteRule ^list-tempat-wisata$ /app/views/listtempatwisata.php
 RewriteRule ^login$ /app/views/login.php
-RewriteRule ^pilih-akomodasi$ /app/views/piliheditakomodasi.php
-RewriteRule ^pilih-wisata$ /app/views/piliheditwisata.php
+RewriteRule ^edit-place$ /app/views/piliheditwisata.php
 RewriteRule ^profile$ /app/views/profileinformation.php
 RewriteRule ^reservation$ /app/views/reservationmenu.php
 RewriteRule ^select-travel-plan$ /app/views/selecttravelplan.php
@@ -29,6 +27,7 @@ RewriteRule ^api/signup$ src/signupServerSide.php
 RewriteRule ^api/filterPlaces$ src/filterPlaceServerSide.php
 RewriteRule ^api/get-places-location$ src/getLocationServerside.php
 RewriteRule ^api/get-places-category$ src/getCategoryServerside.php
+RewriteRule ^api/get-place-info$ src/getPlaceInfo.php
 RewriteRule ^api/add-destination$ src/addDestinationController.php
 RewriteRule ^api/profile/img$ src/profileImgController.php
 
