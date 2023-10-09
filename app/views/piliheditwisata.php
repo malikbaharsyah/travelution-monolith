@@ -39,7 +39,7 @@
                         <script src="../../public/js/getCategory.js"></script> 
                     </div>
                 </div>
-                <script src="../../public/js/placeselection.js"></script>
+                <script src="../../public/js/editplaceselection.js"></script>
             </div>
             <div class="filter2">
                 <h1>Filter Daerah:</h1>
@@ -49,7 +49,7 @@
                         <script src="../../public/js/getLocation.js"></script>
                     </div>
                 </div>
-                <script src="../../public/js/placeselection.js"></script>
+                <script src="../../public/js/editplaceselection.js"></script>
             </div>
             <button type="submit" class="buttonfilter" id="buttonfilter" >Apply Filter</button>
             <script src="../../public/js/httprequest.js"></script>
@@ -62,7 +62,7 @@
     <div class="listdestination" id="destinationContainer">
         
     </div>
-    <script src="../../public/js/placeselection.js"></script>
+    <script src="../../public/js/editplaceselection.js"></script>
     <script src="../../public/js/editinfo.js"></script>
     <script src="../../public/js/addtempatwisata.js"></script>
     <div class="pagination-page">

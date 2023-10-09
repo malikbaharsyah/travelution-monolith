@@ -6,7 +6,7 @@
                 <li><a href="#">' . $_SESSION["Username"] . '</a>
                     <ul class="profiledropdownadmin">
                         <li><a href="profile">Profil</a></li>
-                        <li><a href="pilih-wisata">Edit Destination</a></li>
+                        <li><a href="edit-place">Edit Destination</a></li>
                         <li><a href="pilih-akomodasi">Edit Accomodation</a></li>
                         <li><a id="logout">Logout</a></li>
                         <script src="../../public/js/logout.js"></script>
