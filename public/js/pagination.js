@@ -1,5 +1,7 @@
 const totalPages = 10;
-let currentPage = 1; 
+let sharedState = {
+    currentPage: 1,
+  };
 
 const paginationList = document.getElementById('pagination-list');
 
@@ -13,7 +15,7 @@ function updatePagination() {
     paginationList.appendChild(prevLink);
     for (let i = 1; i <= totalPages; i++) {
         const pageLink = document.createElement('a');
-        pageLink.href = '#';
+        pageLink.href = '#'+i;
         pageLink.textContent = i;
         if (i === currentPage) {
             pageLink.classList.add('active');
@@ -51,4 +53,8 @@ function updatePagination() {
         }
     });
 }
+
+export default sharedState;
+
 updatePagination();
+

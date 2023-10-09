@@ -1,3 +1,5 @@
+import sharedState from "./pagination.js"
+
 document.addEventListener("DOMContentLoaded" , async () => {
     const searchInput = document.getElementById("search");
     const sortedSelect = document.getElementById("sorted");
@@ -30,11 +32,13 @@ document.addEventListener("DOMContentLoaded" , async () => {
         const locationArray = getLocationFilter();
         const typeString = typeArray.join(', ');
         const locationString = locationArray.join(', ');
-        console.log(sortedSelect);
+        // console.log(sortedSelect);
         const formData = new FormData();
         formData.append("category", typeString);
         formData.append("location", locationString);
         formData.append("search", searchInput);
+        // console.log(sharedState.currentPage);
+        formData.append("offset", (sharedState.currentPage-1)*18);
         if (sortedSelect === "Termurah")
         {
             formData.append("sortby", "PlacePrice");
@@ -59,7 +63,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
     
         const lib = new Lib();
         const res = await lib.post('/api/filterPlaces', formData);
-        console.log(res);
+        // console.log(res);
         const jsonRes = JSON.parse(res);
         
         var container = document.getElementById("destinationContainer");

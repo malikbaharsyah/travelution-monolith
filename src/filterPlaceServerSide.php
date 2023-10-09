@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $search = $_POST["search"];
     $sortby = $_POST["sortby"];
     $order = $_POST["order"];
+    $offset = $_POST["offset"];
 
     $categoryArray = explode(', ', $category);
     $locationArray = explode(', ', $location);
@@ -56,8 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $sql = $sql . " ORDER BY $sortby $order";
     }
 
-
-    
+    $sql = $sql . " LIMIT (" . $offset . ", 18)";
     $stmt = executeSQL($sql, $params);
     
     $res = array();
