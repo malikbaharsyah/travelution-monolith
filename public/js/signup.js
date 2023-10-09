@@ -24,7 +24,7 @@ const signup = async (e) => {
 
         const lib = new Lib();
         const res = await lib.post('/api/signup', formData);
-        console.log(res)
+        // console.log(res)
         const jsonRes = JSON.parse(res);
         if (jsonRes["message"]=="Sign Up Success")
         {

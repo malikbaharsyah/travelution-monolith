@@ -53,7 +53,7 @@
             </div>
             <button type="submit" class="buttonfilter" id="buttonfilter" >Apply Filter</button>
             <script src="../../public/js/httprequest.js"></script>
-            <script src="../../public/js/loadPlaces.js"></script>
+            <script src="../../public/js/placeselection.js"></script>
         </div>
     </div>
     <div class="buttonkonfirmasi">

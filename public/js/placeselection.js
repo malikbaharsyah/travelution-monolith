@@ -1,5 +1,3 @@
-import sharedState from "./pagination.js"
-
 document.addEventListener("DOMContentLoaded" , async () => {
     const searchInput = document.getElementById("search");
     const sortedSelect = document.getElementById("sorted");
@@ -8,7 +6,8 @@ document.addEventListener("DOMContentLoaded" , async () => {
     const toggleButton2 = document.getElementById("toggle-dropdown2");
     const dropdown2 = document.getElementById("location-dropdown");
     const filterButton = document.getElementById("buttonfilter");
-
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = (urlParams.get('page')-1)*18;
     const loadDestination = async (e) => {
         if (e)
         e.preventDefault();
@@ -37,8 +36,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
         formData.append("category", typeString);
         formData.append("location", locationString);
         formData.append("search", searchInput);
-        // console.log(sharedState.currentPage);
-        formData.append("offset", (sharedState.currentPage-1)*18);
+        formData.append("offset", page);
         if (sortedSelect === "Termurah")
         {
             formData.append("sortby", "PlacePrice");
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
             newDiv.className = "destinationbox";
     
             var newLink = document.createElement("a");
-            newLink.href = "/info-place";
+            newLink.href = "/info-place?placeid="+place["PlaceID"]; 
     
             var newImage = document.createElement("img");
             newImage.src = "../../public/package/purpletravel.jpg";
@@ -92,9 +90,9 @@ document.addEventListener("DOMContentLoaded" , async () => {
             var newH3 = document.createElement("h3");
             newH3.textContent = place["PlaceLocation"];
     
-            newDiv.appendChild(newImage);
-            newDiv.appendChild(newH2);
-            newDiv.appendChild(newH3);
+            newLink.appendChild(newImage);
+            newLink.appendChild(newH2);
+            newLink.appendChild(newH3);
     
             newDiv.appendChild(newLink);
             container.appendChild(newDiv);

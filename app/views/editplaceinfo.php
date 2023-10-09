@@ -19,7 +19,7 @@
         <h1 id="destination-name"></h1>
         <form action="edit-place" method="POST" enctype="multipart/form-data">
             <div class="deletebutton">
-                <button type="submit" name="delete" id="delete"><a href="edit-place">Delete</a></button>
+                <button type="submit" name="delete" id="delete"><a href="edit-place?page=1">Delete</a></button>
             </div>
             <div class="uploadinfo">
                 <h2>Upload Foto:</h2>

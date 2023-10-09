@@ -20,7 +20,7 @@ window.onload = async () => {
     var description = document.getElementById("description");
 
     const placeData = jsonRes["message"];
-    console.log(placeData[0]);
+    // console.log(placeData[0]);
     placeName.innerHTML = placeData[0]["PlaceName"];
     location.innerHTML = placeData[0]["PlaceLocation"];
     price.innerHTML += placeData[0]["PlacePrice"];

@@ -9,7 +9,7 @@ const updateInfo = async() => {
 
         const lib = new Lib();
         const res = await lib.get('/api/profile');
-        console.log(res);
+        // console.log(res);
         const jsonRes = JSON.parse(res);
         
         datas = jsonRes["data"];

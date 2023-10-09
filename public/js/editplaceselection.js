@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded" , async () => {
     const toggleButton2 = document.getElementById("toggle-dropdown2");
     const dropdown2 = document.getElementById("location-dropdown");
     const filterButton = document.getElementById("buttonfilter");
-
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = (urlParams.get('page')-1)*18;
     const loadDestination = async (e) => {
         if (e)
         e.preventDefault();
@@ -30,12 +31,13 @@ document.addEventListener("DOMContentLoaded" , async () => {
         const locationArray = getLocationFilter();
         const typeString = typeArray.join(', ');
         const locationString = locationArray.join(', ');
-        console.log(sortedSelect);
+        // console.log(sortedSelect);
         const formData = new FormData();
         formData.append("category", typeString);
         formData.append("location", locationString);
         formData.append("search", searchInput);
-        if (sortedSelect === "Termurah")
+        formData.append("offset", page);
+            if (sortedSelect === "Termurah")
         {
             formData.append("sortby", "PlacePrice");
             formData.append("order", "ASC");
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded" , async () => {
     
         const lib = new Lib();
         const res = await lib.post('/api/filterPlaces', formData);
-        console.log(res);
+        // console.log(res);
         const jsonRes = JSON.parse(res);
         
         var container = document.getElementById("destinationContainer");

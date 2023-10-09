@@ -6,7 +6,7 @@ const getCategory = async (e) => {
     const lib = new Lib();
     const res = await lib.get('/api/get-places-category', formData);
     const jsonRes = JSON.parse(res);
-    console.log(jsonRes["message"])
+    // console.log(jsonRes["message"])
 
     var catDropDown = document.getElementById("type-dropdown");
     

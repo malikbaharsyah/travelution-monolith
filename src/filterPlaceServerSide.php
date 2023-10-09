@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $sql = $sql . " ORDER BY $sortby $order";
     }
 
-    $sql = $sql . " LIMIT (" . $offset . ", 18)";
+    $sql = $sql . " LIMIT 18 OFFSET " . $offset;
     $stmt = executeSQL($sql, $params);
     
     $res = array();
