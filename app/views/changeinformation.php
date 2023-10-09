@@ -38,6 +38,6 @@
         </div>
         <button type="submit" name="submit" id="submit">Change</button>
     </div>
-    <script src="../../public/js/changeinformation.js"></script>
+    <script src="../../public/js/changeinfo.js"></script>
 </body>
 </html>
