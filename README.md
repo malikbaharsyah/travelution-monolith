@@ -90,9 +90,9 @@ Konfirmasi Pemesanan Menu
 <b>Backend / Server-side</b>
 | Nama | Pembagian Tugas |
 | :---         |     :---     |
-| Bintang Hijriawan      | Sign Up & Login, Reservasi Destinasi & Akomodasi, Update & Delete Destinasi & Akomodasi  |
+| Bintang Hijriawan      | Sign Up & Login, SearchSortFilter Menu, Pagination Menu  |
 | Jason Rivalino         | Database Aplikasi |
-| M. Malik I. Baharsyah  | Profile & Change User Information Menu, Create & Read Destinasi & Akomodasi  |
+| M. Malik I. Baharsyah  | Profile & Change User Information Menu, CRUD Destinasi & Akomodasi  |
 
 ## Acknowledgements
 - Tuhan Yang Maha Esa
