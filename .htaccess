@@ -29,8 +29,10 @@ RewriteRule ^api/signup$ src/signupServerSide.php
 RewriteRule ^api/filterPlaces$ src/filterPlaceServerSide.php
 RewriteRule ^api/get-places-location$ src/getLocationServerside.php
 RewriteRule ^api/get-places-category$ src/getCategoryServerside.php
+RewriteRule ^api/add-destination$ src/addDestinationController.php
 
 RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteRule ^api/profile$ src/profileController.php
 
 RewriteCond %{REQUEST_METHOD} ^PUT$
 
